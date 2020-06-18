@@ -18,8 +18,8 @@
   "notification_subscribers": [],
   "sync_notification_subscribers": [],
   "branches_to_filter": [
-    "live-sxs",
-    "master-sxs"
+    "live",
+    "master"
   ],
   "continue_with_document_error": true,
   "skip_source_output_uploading": false,
@@ -49,16 +49,14 @@
     }
   ],
   "branch_target_mapping": {
-    "live": [
-      "Publish",
-      "PDF"
+    "live-sxs": [
+      "Publish"
     ],
-    "master": [
-      "Publish",
-      "PDF"
+    "master-sxs": [
+      "Publish"
     ]
   },
-  "need_generate_pdf_url_template": true,
+  "need_generate_pdf_url_template": false,
   "targets": {
     "Pdf": {
       "template_folder": "_themes.pdf"
