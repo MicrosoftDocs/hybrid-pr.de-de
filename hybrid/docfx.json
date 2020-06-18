@@ -41,6 +41,8 @@
     "overwrite": [],
     "externalReference": [],
     "globalMetadata": {
+      "bilingual_type": "hover over",
+      "disable_contribution_on_translation_quality": ["MTE95", "MTE75","MT","Blank"],
       "feedback_system": "GitHub",
       "feedback_github_repo": "MicrosoftDocs/hybrid.de-de",
       "feedback_product_url": "https://feedback.azure.com/forums/34192--general-feedback",
