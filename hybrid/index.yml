@@ -9,13 +9,13 @@ metadata:
   ms.topic: hub-page
   author: BryanLa
   ms.author: bryanla
-  ms.date: 06/08/2020
-  ms.openlocfilehash: aa1477386b5c6fe356459e5919da4edd8cf24075
-  ms.sourcegitcommit: bb3e40b210f86173568a47ba18c3cc50d4a40607
+  ms.date: 06/19/2020
+  ms.openlocfilehash: 4d2cd89f0375031c25820509290f4fe9336d0ca4
+  ms.sourcegitcommit: 058c7d4366cd015b8c5fbcba012f9e74be9f81cc
   ms.translationtype: HT
   ms.contentlocale: de-DE
-  ms.lasthandoff: 06/17/2020
-  ms.locfileid: "84909692"
+  ms.lasthandoff: 06/19/2020
+  ms.locfileid: "85111285"
 highlightedContent:
   items:
   - title: 'Azure Hybrid Virtual Event: 24. Juni 2020'
@@ -30,6 +30,9 @@ highlightedContent:
   - title: 'Build 2020: Intelligent Edge-Sitzungen'
     itemType: video
     url: https://mybuild.microsoft.com/sessions?q=%2522%2520intelligent%2520edge%2520%2522%2520%2522%2520sql%2520edge%2520%2522
+  - title: 'Ignite 2019: Sitzungen zum Thema „Hybrid“'
+    itemType: video
+    url: https://myignite.techcommunity.microsoft.com/sessions?t={"from":"2019-11-03T08:00:00-05:00","to":"2019-11-08T19:00:00-05:00"}&q=hybrid&s={"name":"translate.refine.label.sort.relevance","type":0}&g=["on-demand"]
 productDirectory:
   title: Azure Hybrid Cloud-Plattform
   summary: Hybridfähige Plattformen zum Entwickeln und Betreiben von Hybridlösungen
