@@ -1,0 +1,72 @@
+### YamlMime:Landing
+title: Dokumentation zu Hybridmustern und -lösungen von Azure
+summary: Hier erfahren Sie, wie Sie Beispiele für Hybridmuster und -lösungen bei der App-Entwicklung nutzen. Azure und Azure Stack ermöglichen die Entwicklung von Hybridanwendungen, die auf einer Suite von intelligenten Clouddiensten und Intelligent Edge-Diensten aufbauen.
+metadata:
+  title: Dokumentation zu Hybridmustern und -lösungen von Azure
+  description: Hier erfahren Sie, wie Sie Beispiele für Hybridmuster und -lösungen bei der App-Entwicklung nutzen. Azure und Azure Stack ermöglichen die Entwicklung von Hybridanwendungen, die auf einer Suite von intelligenten Clouddiensten und Intelligent Edge-Diensten aufbauen.
+  ms.service: azure-stack
+  ms.topic: landing-page
+  author: BryanLa
+  ms.author: bryanla
+  ms.date: 10/31/2019
+  ms.openlocfilehash: 923e8aa2af78b5d23ba1f25d8b0eb5b80edc4f0a
+  ms.sourcegitcommit: bb3e40b210f86173568a47ba18c3cc50d4a40607
+  ms.translationtype: HT
+  ms.contentlocale: de-DE
+  ms.lasthandoff: 06/17/2020
+  ms.locfileid: "84909718"
+landingContent:
+- title: Informationen zu Hybridmustern und -lösungen
+  linkLists:
+  - linkListType: overview
+    links:
+    - text: Worum handelt es sich bei Beispielen für Hybridmuster und -lösungen?
+      url: overview-patterns-solution-examples.md
+  - linkListType: concept
+    links:
+    - text: Überlegungen zum Entwurf von Hybrid-Apps
+      url: overview-app-design-considerations.md
+- title: Erkunden von Hybridmustern
+  linkLists:
+  - linkListType: architecture
+    links:
+    - text: Cloudübergreifende Skalierung
+      url: pattern-cross-cloud-scale.md
+    - text: Hybrider CI/CD-Ansatz für DevOps
+      url: pattern-cicd-pipeline.md
+    - text: Ermittlung der Kundenfrequenz (Einzelhandel)
+      url: pattern-retail-footfall-detection.md
+    - text: Geografisch verteilte App
+      url: pattern-geo-distributed.md
+- title: Bereitstellen von Beispielen für Hybridlösungen
+  linkLists:
+  - linkListType: tutorial
+    links:
+    - text: Cloudübergreifende Skalierung
+      url: solution-deployment-guide-cross-cloud-scaling.md
+    - text: Hybrider CI/CD-Ansatz für DevOps
+      url: https://aka.ms/hybriddevopsdeploy
+    - text: Ermittlung der Kundenfrequenz (Einzelhandel)
+      url: solution-deployment-guide-retail-footfall-detection.md
+    - text: Geografisch verteilte App
+      url: solution-deployment-guide-geo-distributed.md
+- title: Szenario für die Ermittlung der Kundenfrequenz im Einzelhandel
+  linkLists:
+  - linkListType: architecture
+    links:
+    - text: Muster
+      url: pattern-retail-footfall-detection.md
+  - linkListType: tutorial
+    links:
+    - text: Leitfaden zur Lösungsbereitstellung
+      url: solution-deployment-guide-retail-footfall-detection.md
+- title: Cloudübergreifende Skalierung mithilfe eines Szenarios für lokale Daten
+  linkLists:
+  - linkListType: architecture
+    links:
+    - text: Muster
+      url: pattern-cross-cloud-scale-onprem-data.md
+  - linkListType: tutorial
+    links:
+    - text: Leitfaden zur Lösungsbereitstellung
+      url: solution-deployment-guide-cross-cloud-scaling-onprem-data.md
