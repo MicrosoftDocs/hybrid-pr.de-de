@@ -1,0 +1,74 @@
+- name: "Azure\_Hybrid-Dokumentation"
+  href: index.yml
+- name: Übersicht
+  items:
+    - name: Beispiele für Hybridmuster und -lösungen
+      href: overview-patterns-solution-examples.md
+- name: Muster
+  items:
+    - name: Single
+      items:
+        - name: Cloudübergreifende Skalierung
+          href: pattern-cross-cloud-scale.md
+        - name: Hybrider CI/CD-Ansatz für DevOps
+          href: pattern-cicd-pipeline.md
+        - name: Geografisch verteilte App
+          href: pattern-geo-distributed.md
+        - name: Hybridrelay
+          href: pattern-hybrid-relay.md
+        - name: Ausgelagerte Daten
+          href: pattern-tiered-data-analytics.md
+        - name: Trainieren von ML-Modellen im Edge-Bereich
+          href: pattern-train-ml-model-at-edge.md
+    - name: Mehrere
+      items:
+        - name: Cloudübergreifende Skalierung (lokale Daten)
+          href: pattern-cross-cloud-scale-onprem-data.md
+        - name: Ermittlung der Kundenfrequenz (Einzelhandel)
+          href: pattern-retail-footfall-detection.md
+        - name: Fehlbestandserkennung im Edge-Bereich
+          href: pattern-out-of-stock-at-edge.md
+- name: Leitfäden zur Lösungsbereitstellung
+  items:
+    - name: Cloudübergreifende Skalierung
+      href: solution-deployment-guide-cross-cloud-scaling.md
+    - name: Cloudübergreifende Skalierung (lokale Daten)
+      href: solution-deployment-guide-cross-cloud-scaling-onprem-data.md
+    - name: Hybrider CI/CD-Ansatz für DevOps
+      href: 'https://aka.ms/hybriddevopsdeploy'
+    - name: Ermittlung der Kundenfrequenz (Einzelhandel)
+      href: solution-deployment-guide-retail-footfall-detection.md
+    - name: Geografisch verteilte App
+      href: solution-deployment-guide-geo-distributed.md
+    - name: Hybridkonnektivität
+      href: solution-deployment-guide-connectivity.md
+    - name: Hybrididentität
+      href: solution-deployment-guide-identity.md
+    - name: Hybridrelay
+      href: 'https://aka.ms/hybridrelaydeployment'
+    - name: Ausgelagerte Daten
+      href: 'https://aka.ms/tiereddatadeploy'
+    - name: MongoDB mit Hochverfügbarkeit
+      href: solution-deployment-guide-mongodb-ha.md
+    - name: SQL Server 2016 mit Hochverfügbarkeit
+      href: solution-deployment-guide-sql-ha.md
+    - name: Fehlbestand im Edge-Bereich
+      href: 'https://aka.ms/edgeinferencingdeploy'
+    - name: Trainieren von ML-Modellen im Edge-Bereich
+      href: 'https://aka.ms/edgetrainingdeploy'
+- name: Konzepte
+  items:
+    - name: Überlegungen zum Entwurf von Hybrid-Apps
+      href: overview-app-design-considerations.md
+- name: Verwandte Themen
+  items:
+    - name: Azure-Dokumentation
+      href: /azure
+    - name: Dokumentation zu Azure Stack
+      href: /azure-stack
+- name: Ressourcen
+  items:
+    - name: Microsoft Learn
+      href: /learn
+    - name: Microsoft Q&A (Fragen und Antworten)
+      href: /answers/products/
