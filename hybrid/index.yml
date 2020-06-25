@@ -9,13 +9,13 @@ metadata:
   ms.topic: hub-page
   author: BryanLa
   ms.author: bryanla
-  ms.date: 06/19/2020
-  ms.openlocfilehash: 4d2cd89f0375031c25820509290f4fe9336d0ca4
-  ms.sourcegitcommit: 058c7d4366cd015b8c5fbcba012f9e74be9f81cc
+  ms.date: 06/23/2020
+  ms.openlocfilehash: 07c1f66901ca5cfeb1fba10f4ae256a727fe9aed
+  ms.sourcegitcommit: 7e1ffd9825fce79d1d3972c0dfd0adc25f4adc0a
   ms.translationtype: HT
   ms.contentlocale: de-DE
-  ms.lasthandoff: 06/19/2020
-  ms.locfileid: "85111285"
+  ms.lasthandoff: 06/23/2020
+  ms.locfileid: "85289515"
 highlightedContent:
   items:
   - title: 'Azure Hybrid Virtual Event: 24. Juni 2020'
@@ -281,10 +281,10 @@ additionalContent:
       links:
       - url: /azure-stack/operator/compare-azure-azure-stack
         text: Azure Global und Azure Stack
-      - url: https://azure.microsoft.com/blog/topics/hybrid/
-        text: Blog zu Azure-Hybridlösungen
       - url: https://azure.microsoft.com/overview/azure-hybrid/
         text: Azure-Hybridfunktionen
+      - url: https://customers.microsoft.com/en-us/search?sq="hybrid cloud"
+        text: Kundenstimmen zu Hybrid Cloud
       - url: /learn
         text: Interaktives Training mit Microsoft Learn
       - url: /learn/tv/
@@ -295,6 +295,8 @@ additionalContent:
         text: .NET-Entwicklung für Azure
       - url: https://github.com/likamrat/azure_arc
         text: Leitfäden für den schnellen Einstieg in Azure Arc
+      - url: https://catalog.azureiotsolutions.com/alldevices?filters={%2218%22:[%221%22]}
+        text: Zertifiziert für Azure IoT Edge-Geräte
       - url: /samples/browse/
         text: Codebeispiele
       - url: https://www.youtube.com/watch?v=2lw8zOpJTn0
@@ -307,7 +309,7 @@ additionalContent:
         text: Azure-Entwicklung mit Visual Studio
     - title: Support und weitere Ressourcen
       links:
-      - url: https://catalog.azureiotsolutions.com/alldevices?filters={%2218%22:[%221%22]}
-        text: Zertifiziert für Azure IoT Edge-Geräte
+      - url: https://azure.microsoft.com/blog/topics/hybrid/
+        text: Blog zu Azure-Hybridlösungen
       - url: /answers/products/
         text: Foren von Microsoft Q&A (Fragen und Antworten)
