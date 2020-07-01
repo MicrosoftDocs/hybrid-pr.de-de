@@ -9,18 +9,18 @@ metadata:
   ms.topic: hub-page
   author: BryanLa
   ms.author: bryanla
-  ms.date: 06/23/2020
-  ms.openlocfilehash: 07c1f66901ca5cfeb1fba10f4ae256a727fe9aed
-  ms.sourcegitcommit: 7e1ffd9825fce79d1d3972c0dfd0adc25f4adc0a
+  ms.date: 06/30/2020
+  ms.openlocfilehash: ac27dd4f6dd719fade045f33750502fa2572bd9a
+  ms.sourcegitcommit: 6914306c4a326c4532d2fc7f325953b56d9d92f8
   ms.translationtype: HT
   ms.contentlocale: de-DE
-  ms.lasthandoff: 06/23/2020
-  ms.locfileid: "85289515"
+  ms.lasthandoff: 07/01/2020
+  ms.locfileid: "85594054"
 highlightedContent:
   items:
-  - title: 'Azure Hybrid Virtual Event: 24. Juni 2020'
+  - title: Azure Hybrid Virtual Event
     itemType: video
-    url: https://info.microsoft.com/ww-registration-azure-hybrid-virtual-event.html
+    url: https://www.youtube.com/playlist?list=PLLasX02E8BPDY8lteNSno4etuLx-6bALf
   - title: 'Build 2020: Sitzungen zum Thema „Hybrid“'
     itemType: video
     url: https://mybuild.microsoft.com/sessions?q=hybrid&g=%255B%2522on-demand%2522%255D
