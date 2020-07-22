@@ -10,12 +10,12 @@ metadata:
   author: BryanLa
   ms.author: bryanla
   ms.date: 06/30/2020
-  ms.openlocfilehash: ac27dd4f6dd719fade045f33750502fa2572bd9a
-  ms.sourcegitcommit: 6914306c4a326c4532d2fc7f325953b56d9d92f8
+  ms.openlocfilehash: ee69d8f1110166063edc5a4b2cdbfaf36b402868
+  ms.sourcegitcommit: d2def847937178f68177507be151df2aa8e25d53
   ms.translationtype: HT
   ms.contentlocale: de-DE
-  ms.lasthandoff: 07/01/2020
-  ms.locfileid: "85594054"
+  ms.lasthandoff: 07/20/2020
+  ms.locfileid: "86477302"
 highlightedContent:
   items:
   - title: Azure Hybrid Virtual Event
@@ -136,7 +136,7 @@ conceptualContent:
     - url: /azure-stack/operator/event-hubs-rp-overview
       itemType: overview
       text: Event Hubs in Azure Stack Hub
-  - title: Microsoft Edge
+  - title: Edge
     links:
     - url: /azure/databox-online/data-box-gateway-overview
       itemType: overview
@@ -172,7 +172,7 @@ conceptualContent:
       text: Azure Sentinel
     - url: /azure/active-directory/devices/concept-azure-ad-join-hybrid
       itemType: overview
-      text: In Azure AD eingebundene Hybridgeräte
+      text: Über Azure AD Hybrid eingebundene Geräte
   - title: Verwaltung
     links:
     - url: https://azure.microsoft.com/services/azure-arc/hybrid-data-services/
@@ -186,7 +186,7 @@ conceptualContent:
       text: Server mit Azure Arc-Aktivierung (Vorschauversion)
     - url: /azure/automation/
       itemType: overview
-      text: Azure-Automatisierung
+      text: Azure Automation
     - url: /azure/storage/files/
       itemType: overview
       text: Azure Files
@@ -206,7 +206,7 @@ conceptualContent:
     links:
     - url: /azure/networking/edge-zones-overview
       itemType: overview
-      text: Azure Edge Zones
+      text: Azure Edge Zone-Instanzen
     - url: /azure/expressroute/
       itemType: overview
       text: Azure ExpressRoute
@@ -224,7 +224,7 @@ conceptualContent:
       text: Azure Traffic Manager
     - url: /azure/virtual-network/
       itemType: overview
-      text: Virtuelles Azure-Netzwerk
+      text: Azure Virtual Network
     - url: /azure/vpn-gateway/
       itemType: overview
       text: Azure VPN Gateway
@@ -232,7 +232,7 @@ conceptualContent:
     links:
     - url: /azure/avere-vfxt/avere-vfxt-overview
       itemType: overview
-      text: Avere vFXT für Azure
+      text: Avere vFXT for Azure
     - url: /azure/backup/
       itemType: overview
       text: Azure Backup
@@ -251,29 +251,29 @@ additionalContent:
     items:
     - title: Muster- und Lösungsbeispiele für Hybrid-Apps
       links:
-      - url: /hybrid/app-solutions/overview-patterns-solution-examples
+      - url: ./app-solutions/overview-patterns-solution-examples.md
         text: Worum handelt es sich bei Muster- und Lösungsbeispielen?
-      - url: /hybrid/app-solutions/overview-app-design-considerations
+      - url: ./app-solutions/overview-app-design-considerations.md
         text: Überlegungen zum Entwurf von Hybrid-Apps
     - title: Erkunden von Hybridmustern
       links:
-      - url: /hybrid/app-solutions/pattern-cross-cloud-scale
+      - url: ./app-solutions/pattern-cross-cloud-scale.md
         text: Cloudübergreifende Skalierung
-      - url: /hybrid/app-solutions/pattern-cicd-pipeline
+      - url: ./app-solutions/pattern-cicd-pipeline.md
         text: Hybrider CI/CD-Ansatz für DevOps
-      - url: /hybrid/app-solutions/pattern-retail-footfall-detection
+      - url: ./app-solutions/pattern-retail-footfall-detection.md
         text: Ermittlung der Kundenfrequenz (Einzelhandel)
-      - url: /hybrid/app-solutions/pattern-geo-distributed
+      - url: ./app-solutions/pattern-geo-distributed.md
         text: Geografisch verteilte App
     - title: Bereitstellen von Beispielen für Hybridlösungen
       links:
-      - url: /hybrid/app-solutions/solution-deployment-guide-cross-cloud-scaling
+      - url: ./app-solutions/solution-deployment-guide-cross-cloud-scaling.md
         text: Cloudübergreifende Skalierung
       - url: https://aka.ms/hybriddevopsdeploy
         text: Hybrider CI/CD-Ansatz für DevOps
-      - url: /hybrid/app-solutions/solution-deployment-guide-retail-footfall-detection
+      - url: ./app-solutions/solution-deployment-guide-retail-footfall-detection.md
         text: Ermittlung der Kundenfrequenz (Einzelhandel)
-      - url: /hybrid/app-solutions/solution-deployment-guide-geo-distributed
+      - url: ./app-solutions/solution-deployment-guide-geo-distributed.md
         text: Geografisch verteilte App
   - title: Zusätzliche Ressourcen
     items:
@@ -298,7 +298,7 @@ additionalContent:
       - url: https://catalog.azureiotsolutions.com/alldevices?filters={%2218%22:[%221%22]}
         text: Zertifiziert für Azure IoT Edge-Geräte
       - url: /samples/browse/
-        text: Codebeispiele
+        text: Browser für Codebeispiele
       - url: https://www.youtube.com/watch?v=2lw8zOpJTn0
         text: Dynamisches Skalieren von Azure Stack Hub auf Azure
       - url: https://labs.iotedge.dev/
