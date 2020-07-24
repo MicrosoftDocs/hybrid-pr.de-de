@@ -10,14 +10,17 @@ metadata:
   author: BryanLa
   ms.author: bryanla
   ms.date: 06/30/2020
-  ms.openlocfilehash: ee69d8f1110166063edc5a4b2cdbfaf36b402868
-  ms.sourcegitcommit: d2def847937178f68177507be151df2aa8e25d53
+  ms.openlocfilehash: 9793f34db13e324de65b719613c0f4dbf4bdf127
+  ms.sourcegitcommit: 8d75007af6ad574e0629208464bbadb97a5c438e
   ms.translationtype: HT
   ms.contentlocale: de-DE
-  ms.lasthandoff: 07/20/2020
-  ms.locfileid: "86477302"
+  ms.lasthandoff: 07/22/2020
+  ms.locfileid: "86949660"
 highlightedContent:
   items:
+  - title: Entdecken der neuen Azure Stack HCI-Lösung
+    itemType: video
+    url: https://azure.microsoft.com/resources/videos/discover-the-new-azure-stack-hci/
   - title: Azure Hybrid Virtual Event
     itemType: video
     url: https://www.youtube.com/playlist?list=PLLasX02E8BPDY8lteNSno4etuLx-6bALf
@@ -186,7 +189,7 @@ conceptualContent:
       text: Server mit Azure Arc-Aktivierung (Vorschauversion)
     - url: /azure/automation/
       itemType: overview
-      text: Azure Automation
+      text: Azure-Automatisierung
     - url: /azure/storage/files/
       itemType: overview
       text: Azure Files
@@ -206,7 +209,7 @@ conceptualContent:
     links:
     - url: /azure/networking/edge-zones-overview
       itemType: overview
-      text: Azure Edge Zone-Instanzen
+      text: Azure Edge Zones
     - url: /azure/expressroute/
       itemType: overview
       text: Azure ExpressRoute
