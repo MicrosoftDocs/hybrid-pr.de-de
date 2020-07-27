@@ -7,20 +7,20 @@ ms.date: 06/07/2020
 ms.author: bryanla
 ms.reviewer: anajod
 ms.lastreviewed: 11/05/2019
-ms.openlocfilehash: 4fd52f76baad8059e130adfc01cdd0152b40a510
-ms.sourcegitcommit: bb3e40b210f86173568a47ba18c3cc50d4a40607
-ms.translationtype: MT
+ms.openlocfilehash: c56575ac8ea6cb35d60bb9419269db89b0295721
+ms.sourcegitcommit: d2def847937178f68177507be151df2aa8e25d53
+ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/17/2020
-ms.locfileid: "84910418"
+ms.lasthandoff: 07/20/2020
+ms.locfileid: "86477217"
 ---
 # <a name="hybrid-app-design-considerations"></a>Überlegungen zum Entwurf von Hybrid-Apps
 
 Microsoft Azure ist die einzige konsistente Hybrid Cloud-Anwendung. Mit Azure können Sie einen Nutzen aus Ihren Investitionen in die Entwicklung ziehen und Apps verwenden, die sich über globale Azure-Instanzen, Sovereign Azure-Clouds sowie Azure Stack (eine Erweiterung von Azure in Ihrem Rechenzentrum) erstrecken können. Apps, die mehrere Clouds nutzen, werden auch als *Hybrid-Apps* bezeichnet.
 
-Im [*Azure-Anwendungsarchitekturleitfaden*](https://docs.microsoft.com/azure/architecture/guide) wird eine strukturierte Vorgehensweise zum Entwerfen von Apps beschrieben, die skalierbar, resilient und hochverfügbar sind. Die im [*Azure-Anwendungsarchitekturleitfaden*](https://docs.microsoft.com/azure/architecture/guide) beschriebenen Überlegungen gelten auch für Apps, die für eine einzelne Cloud entworfen werden, sowie Apps, die sich über mehrere Clouds erstrecken.
+Im [*Azure-Anwendungsarchitekturleitfaden*](/azure/architecture/guide) wird eine strukturierte Vorgehensweise zum Entwerfen von Apps beschrieben, die skalierbar, resilient und hochverfügbar sind. Die im [*Azure-Anwendungsarchitekturleitfaden*](/azure/architecture/guide) beschriebenen Überlegungen gelten auch für Apps, die für eine einzelne Cloud entworfen werden, sowie Apps, die sich über mehrere Clouds erstrecken.
 
-In diesem Artikel werden die [*Säulen der Softwarequalität*](https://docs.microsoft.com/azure/architecture/guide/pillars) erläutert, die im [*Azure-* ](https://docs.microsoft.com/azure/architecture/guide/)[*Anwendungsarchitekturleitfaden*](https://docs.microsoft.com/azure/architecture/guide/) angesprochen werden. Der Fokus liegt dabei insbesondere auf dem Entwerfen von Hybrid-Apps. Außerdem wird hier die Säule *Platzierung* erläutert, da Hybrid-Apps nicht explizit einer einzelnen Cloud oder einem lokalen Rechenzentrum zuzuordnen sind.
+In diesem Artikel werden die [*Säulen der Softwarequalität*](/azure/architecture/guide/pillars) erläutert, die im [*Azure-* ](/azure/architecture/guide/)[*Anwendungsarchitekturleitfaden*](/azure/architecture/guide/) angesprochen werden. Der Fokus liegt dabei insbesondere auf dem Entwerfen von Hybrid-Apps. Außerdem wird hier die Säule *Platzierung* erläutert, da Hybrid-Apps nicht explizit einer einzelnen Cloud oder einem lokalen Rechenzentrum zuzuordnen sind.
 
 Hybridszenarios unterscheiden sich stark je nach den für die Bereitstellung verfügbaren Ressourcen und bringen Überlegungen zu Geografie, Sicherheit, Internetzugriff usw. mit sich. In diesem Leitfaden können zwar nicht die speziell für Sie geltenden Umstände besprochen werden, aber Sie erhalten Informationen zu einigen wichtigen Richtlinien und bewährten Methoden, auf denen Sie aufbauen können. Das erfolgreiche Entwerfen, Konfigurieren, Bereitstellen und Verwalten einer hybriden Anwendungsarchitektur umfasst viele Entwurfsfaktoren, die Ihnen möglicherweise nicht bekannt sind.
 
@@ -93,7 +93,7 @@ Die Platzierung ist eine wichtige Aufgabe der Positionierungskomponenten für di
 
 **Überprüfen Sie die erforderlichen Speicherorte.** Stellen Sie sicher, dass die App oder eine der zugehörigen Komponenten in einer bestimmten Cloud ausgeführt werden muss oder eine Zertifizierung erforderlich ist. Dies kann die von Ihrem Unternehmen oder vom Gesetzgeber vorgeschriebenen Anforderungen an die Datenhoheit umfassen. Überprüfen Sie außerdem, ob für einen bestimmten Standort oder ein bestimmtes Gebietsschema lokale Vorgänge erforderlich sind.
 
-**Bestimmen Sie die Konnektivitätsabhängigkeiten.** Die erforderlichen Speicherorte sowie andere Faktoren können die Konnektivitätsabhängigkeiten zwischen den einzelnen Komponenten vorgeben. Bestimmen Sie bei der Platzierung der Komponenten die optimale Konnektivität und Sicherheit für die Kommunikation zwischen diesen. Es gibt die folgenden Optionen: [*VPN*,](https://docs.microsoft.com/azure/vpn-gateway/) [*ExpressRoute*](https://docs.microsoft.com/azure/expressroute/) und [*Hybrid Connections*](https://docs.microsoft.com/azure/app-service/app-service-hybrid-connections).
+**Bestimmen Sie die Konnektivitätsabhängigkeiten.** Die erforderlichen Speicherorte sowie andere Faktoren können die Konnektivitätsabhängigkeiten zwischen den einzelnen Komponenten vorgeben. Bestimmen Sie bei der Platzierung der Komponenten die optimale Konnektivität und Sicherheit für die Kommunikation zwischen diesen. Es gibt die folgenden Optionen: [*VPN*,](/azure/vpn-gateway/) [*ExpressRoute*](/azure/expressroute/) und [*Hybrid Connections*](/azure/app-service/app-service-hybrid-connections).
 
 **Bewerten Sie die Plattformfunktionen.** Überprüfen Sie für jede App-Komponente, ob der jeweils erforderliche Ressourcenanbieter in der Cloud verfügbar ist und ob die Bandbreite den erwarteten Durchsatz- und Latenzanforderungen gerecht werden kann.
 
@@ -109,7 +109,7 @@ Die Platzierung ist eine wichtige Aufgabe der Positionierungskomponenten für di
 
 Skalierbarkeit ist die Fähigkeit eines Systems, die höhere Auslastung einer App zu verarbeiten, die im Laufe der Zeit variieren kann, wenn neben der Größe und dem Umfang der App andere Faktoren die Zielgruppengröße zusätzlich beeinflussen.
 
-Diese Säule wird ausführlich im Artikel „Azure Architecture Framework“ unter [*Skalierbarkeit*](https://docs.microsoft.com/azure/architecture/guide/pillars#scalability) erörtert.
+Diese Säule wird ausführlich im Artikel „Azure Architecture Framework“ unter [*Skalierbarkeit*](/azure/architecture/guide/pillars#scalability) erörtert.
 
 Der horizontale Skalierungsansatz für Hybrid-Apps ermöglicht es Ihnen, weitere Instanzen hinzufügen, um den Bedarf zu decken, und sie dann in ruhigeren Zeiträumen zu deaktivieren.
 
@@ -155,7 +155,7 @@ Diese Säule wird ausführlich im Artikel „Azure Architecture Framework“ unt
 
 Resilienz ist die Fähigkeit einer Hybrid-App und eines Systems, nach Ausfällen eine Wiederherstellung durchzuführen und die Betriebsbereitschaft sicherzustellen. Das Ziel der Resilienz besteht darin, nach einem Ausfall wieder die volle Funktionsfähigkeit einer App herzustellen. Resilienzstrategien beinhalten Lösungen wie Sicherungen, Replikationen und Notfallwiederherstellung.
 
-Diese Säule wird ausführlich im Artikel „Azure Architecture Framework“ unter [*Resilienz*](https://docs.microsoft.com/azure/architecture/guide/pillars#resiliency) erörtert.
+Diese Säule wird ausführlich im Artikel „Azure Architecture Framework“ unter [*Resilienz*](/azure/architecture/guide/pillars#resiliency) erörtert.
 
 ### <a name="resiliency-checklist"></a>Checkliste für Resilienz
 
@@ -201,7 +201,7 @@ Bestimmen Sie, welche App-Komponenten überwacht werden müssen.
 
 Die Sicherheit ist einer der wichtigsten Faktoren aller Cloud-Apps und gewinnt im Zusammenhang mit Hybrid Cloud-Apps noch mehr an Bedeutung.
 
-Diese Säule wird ausführlich im Artikel „Azure Architecture Framework“ unter [*Sicherheit*](https://docs.microsoft.com/azure/architecture/guide/pillars#security) erörtert.
+Diese Säule wird ausführlich im Artikel „Azure Architecture Framework“ unter [*Sicherheit*](/azure/architecture/guide/pillars#security) erörtert.
 
 ### <a name="security-checklist"></a>Checkliste für die Sicherheit
 

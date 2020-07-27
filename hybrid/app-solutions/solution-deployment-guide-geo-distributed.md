@@ -7,12 +7,12 @@ ms.date: 11/05/2019
 ms.author: bryanla
 ms.reviewer: anajod
 ms.lastreviewed: 11/05/2019
-ms.openlocfilehash: 8f2b7e48a62896acfce7293dcd4f18d5a43add01
-ms.sourcegitcommit: bb3e40b210f86173568a47ba18c3cc50d4a40607
-ms.translationtype: MT
+ms.openlocfilehash: 741ddf2c3ed234788af359dd233f6a656fbea13c
+ms.sourcegitcommit: d2def847937178f68177507be151df2aa8e25d53
+ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/17/2020
-ms.locfileid: "84910520"
+ms.lasthandoff: 07/20/2020
+ms.locfileid: "86477353"
 ---
 # <a name="direct-traffic-with-a-geo-distributed-app-using-azure-and-azure-stack-hub"></a>Weiterleiten von Datenverkehr mit einer geografisch verteilten App mithilfe von Azure und Azure Stack Hub
 
@@ -52,7 +52,7 @@ Es ist hilfreich, wenn Sie Folgendes wissen, bevor Sie den Speicherbedarf für e
 
 - **Benutzerdefinierte Domäne für die App:** Wie lautet der Name der benutzerdefinierten Domäne, mit dem Kunden auf die App zugreifen? Für die Beispiel-App lautet der Name der benutzerdefinierten Domäne *www\.scalableasedemo.com.*
 
-- **Traffic Manager-Domäne:** Ein Domänenname wird ausgewählt, wenn Sie ein [Azure Traffic Manager-Profil](https://docs.microsoft.com/azure/traffic-manager/traffic-manager-manage-profiles) erstellen. Dieser Name wird mit dem Suffix *trafficmanager.net* kombiniert, um einen Domäneneintrag zu registrieren, der von Traffic Manager verwaltet wird. Für die Beispiel-App ist der ausgewählte Name *scalable-ase-demo*. Der vollständige Domänenname, der von Traffic Manager verwaltet wird, lautet also *scalable-ase-demo.trafficmanager.net*.
+- **Traffic Manager-Domäne:** Ein Domänenname wird ausgewählt, wenn Sie ein [Azure Traffic Manager-Profil](/azure/traffic-manager/traffic-manager-manage-profiles) erstellen. Dieser Name wird mit dem Suffix *trafficmanager.net* kombiniert, um einen Domäneneintrag zu registrieren, der von Traffic Manager verwaltet wird. Für die Beispiel-App ist der ausgewählte Name *scalable-ase-demo*. Der vollständige Domänenname, der von Traffic Manager verwaltet wird, lautet also *scalable-ase-demo.trafficmanager.net*.
 
 - **Strategie für die Skalierung der App:** Entscheiden Sie, ob die App über mehrere App Service-Umgebungen in einer Region, mehreren Regionen oder mit einer Mischung aus beiden Ansätzen verteilt werden soll. Die Entscheidung sollte darauf basieren, woher der Kundendatenverkehr erwartet wird, aber auch darauf, wie gut der Rest der Back-End-Infrastruktur zur Unterstützung einer App skaliert werden kann. Bei einer hundertprozentigen Zustandslosigkeit kann eine App beispielsweise hochgradig skaliert werden, indem eine Kombination von mehreren App Service-Umgebungen pro Azure-Region verwendet und dies mit App Service-Umgebungen, die in mehreren Azure-Regionen bereitgestellt sind, multipliziert wird. Da Kunden aus mehr als 15 globalen Azure-Regionen auswählen können, ist wirklich die Erstellung einer weltweiten, hoch skalierbaren App möglich. Für die hier verwendete Beispiel-App wurden drei App Service-Umgebungen in einer einzelnen Azure-Region (USA (Mitte/Süden)) erstellt.
 
@@ -84,7 +84,7 @@ Ein Azure-Abonnement und eine Azure Stack Hub-Installation sind erforderlich.
 
 ### <a name="obtain-a-custom-domain-and-configure-dns"></a>Abrufen einer benutzerdefinierten Domäne und Konfigurieren des DNS
 
-Aktualisieren Sie die DNS-Zonendatei für die Domäne. Azure AD kann dann die Eigentümerschaft für den Namen der benutzerdefinierten Domäne überprüfen. Verwenden Sie [Azure DNS](https://docs.microsoft.com/azure/dns/dns-getstarted-portal) für Azure-/Office 365-/externe DNS-Einträge in Azure, oder fügen Sie den DNS-Eintrag bei einer [anderen DNS-Registrierungsstelle](https://support.office.com/article/Create-DNS-records-for-Office-365-when-you-manage-your-DNS-records-b0f3fdca-8a80-4e8e-9ef3-61e8a2a9ab23/) hinzu.
+Aktualisieren Sie die DNS-Zonendatei für die Domäne. Azure AD kann dann die Eigentümerschaft für den Namen der benutzerdefinierten Domäne überprüfen. Verwenden Sie [Azure DNS](/azure/dns/dns-getstarted-portal) für Azure-/Office 365-/externe DNS-Einträge in Azure, oder fügen Sie den DNS-Eintrag bei einer [anderen DNS-Registrierungsstelle](https://support.office.com/article/Create-DNS-records-for-Office-365-when-you-manage-your-DNS-records-b0f3fdca-8a80-4e8e-9ef3-61e8a2a9ab23/) hinzu.
 
 1. Registrieren Sie eine benutzerdefinierte Domäne bei einer öffentlichen Registrierungsstelle.
 
@@ -113,7 +113,7 @@ Richten Sie Hybrid-CI/CD (Continuous Integration/Continuous Delivery) ein, um di
 
 ### <a name="create-web-app-deployment-in-both-clouds"></a>Erstellen der Web-App-Bereitstellung in beiden Clouds
 
-1. Bearbeiten Sie die Datei **WebApplication.csproj**: Wählen Sie `Runtimeidentifier` aus, und fügen Sie `win10-x64` hinzu. (Weitere Informationen finden Sie in der Dokumentation zur [eigenständigen Bereitstellung](https://docs.microsoft.com/dotnet/core/deploying/deploy-with-vs#simpleSelf).)
+1. Bearbeiten Sie die Datei **WebApplication.csproj**: Wählen Sie `Runtimeidentifier` aus, und fügen Sie `win10-x64` hinzu. (Weitere Informationen finden Sie in der Dokumentation zur [eigenständigen Bereitstellung](/dotnet/core/deploying/deploy-with-vs#simpleSelf).)
 
     ![Bearbeiten der Projektdatei der Web-App in Visual Studio](media/solution-deployment-guide-geo-distributed/image3.png)
 
@@ -129,7 +129,7 @@ Richten Sie Hybrid-CI/CD (Continuous Integration/Continuous Delivery) ein, um di
 
     ![Hinzufügen von Code zur Builddefinition in Azure Pipelines](media/solution-deployment-guide-geo-distributed/image4.png)
 
-3. **Führen Sie den Buildvorgang durch.** Der Buildvorgang für die [eigenständige Bereitstellung](https://docs.microsoft.com/dotnet/core/deploying/deploy-with-vs#simpleSelf) veröffentlicht Artefakte, die in Azure und Azure Stack Hub ausgeführt werden können.
+3. **Führen Sie den Buildvorgang durch.** Der Buildvorgang für die [eigenständige Bereitstellung](/dotnet/core/deploying/deploy-with-vs#simpleSelf) veröffentlicht Artefakte, die in Azure und Azure Stack Hub ausgeführt werden können.
 
 #### <a name="using-an-azure-hosted-agent"></a>Verwenden eines gehosteten Azure-Agents
 
@@ -229,11 +229,11 @@ Azure DevOps Services bieten eine äußerst flexibel konfigurier- und verwaltbar
 21. Speichern Sie alle Änderungen.
 
 > [!Note]  
-> Bei der vorlagenbasierten Erstellung einer Releasedefinition wurden einige Einstellungen für die Aufgaben unter Umständen automatisch als [Umgebungsvariablen](https://docs.microsoft.com/azure/devops/pipelines/release/variables?view=vsts&tabs=batch#custom-variables) definiert. Diese Einstellungen können in den Aufgabeneinstellungen nicht geändert werden. Zum Bearbeiten dieser Einstellungen müssen Sie das übergeordnete Umgebungselement auswählen.
+> Bei der vorlagenbasierten Erstellung einer Releasedefinition wurden einige Einstellungen für die Aufgaben unter Umständen automatisch als [Umgebungsvariablen](/azure/devops/pipelines/release/variables?tabs=batch&view=vsts#custom-variables) definiert. Diese Einstellungen können in den Aufgabeneinstellungen nicht geändert werden. Zum Bearbeiten dieser Einstellungen müssen Sie das übergeordnete Umgebungselement auswählen.
 
 ## <a name="part-2-update-web-app-options"></a>Teil 2: Aktualisieren der Web-App-Optionen
 
-Von [Azure App Service](https://docs.microsoft.com/azure/app-service/overview) wird ein hochgradig skalierbarer Webhostingdienst mit Self-Patching bereitgestellt.
+Von [Azure App Service](/azure/app-service/overview) wird ein hochgradig skalierbarer Webhostingdienst mit Self-Patching bereitgestellt.
 
 ![Azure App Service](media/solution-deployment-guide-geo-distributed/image27.png)
 
@@ -246,17 +246,17 @@ Von [Azure App Service](https://docs.microsoft.com/azure/app-service/overview) w
 > [!Note]  
 > Verwenden Sie einen CNAME-Eintrag für alle benutzerdefinierten DNS-Namen – außer für Stammdomänen (z. B. „northwind.com“).
 
-Informationen zum Migrieren einer Livewebsite und ihres DNS-Domänennamens zu App Service finden Sie unter [Migrieren einer aktiven benutzerdefinierten Domäne zu Azure App Service](https://docs.microsoft.com/azure/app-service/manage-custom-dns-migrate-domain).
+Informationen zum Migrieren einer Livewebsite und ihres DNS-Domänennamens zu App Service finden Sie unter [Migrieren einer aktiven benutzerdefinierten Domäne zu Azure App Service](/azure/app-service/manage-custom-dns-migrate-domain).
 
 ### <a name="prerequisites"></a>Voraussetzungen
 
 Führen Sie für diese Lösung die folgenden Schritte aus:
 
-- [Erstellen Sie eine App Service-App](https://docs.microsoft.com/azure/app-service/), oder verwenden Sie eine App, die für eine andere Lösung erstellt wurde.
+- [Erstellen Sie eine App Service-App](/azure/app-service/), oder verwenden Sie eine App, die für eine andere Lösung erstellt wurde.
 
 - Erwerben Sie einen Domänennamen, und stellen Sie sicher, dass der Zugriff auf die DNS-Registrierung für den Domänenanbieter möglich ist.
 
-Aktualisieren Sie die DNS-Zonendatei für die Domäne. Azure AD überprüft die Eigentümerschaft für den Namen der benutzerdefinierten Domäne. Verwenden Sie [Azure DNS](https://docs.microsoft.com/azure/dns/dns-getstarted-portal) für Azure-/Office 365-/externe DNS-Einträge in Azure, oder fügen Sie den DNS-Eintrag bei einer [anderen DNS-Registrierungsstelle](https://support.office.com/article/Create-DNS-records-for-Office-365-when-you-manage-your-DNS-records-b0f3fdca-8a80-4e8e-9ef3-61e8a2a9ab23/) hinzu.
+Aktualisieren Sie die DNS-Zonendatei für die Domäne. Azure AD überprüft die Eigentümerschaft für den Namen der benutzerdefinierten Domäne. Verwenden Sie [Azure DNS](/azure/dns/dns-getstarted-portal) für Azure-/Office 365-/externe DNS-Einträge in Azure, oder fügen Sie den DNS-Eintrag bei einer [anderen DNS-Registrierungsstelle](https://support.office.com/article/Create-DNS-records-for-Office-365-when-you-manage-your-DNS-records-b0f3fdca-8a80-4e8e-9ef3-61e8a2a9ab23/) hinzu.
 
 - Registrieren Sie eine benutzerdefinierte Domäne bei einer öffentlichen Registrierungsstelle.
 
@@ -267,14 +267,14 @@ Aktualisieren Sie die DNS-Zonendatei für die Domäne. Azure AD überprüft die 
 Konfigurieren Sie beispielsweise die DNS-Einstellungen für die Stammdomäne „northwindcloud.com“, um DNS-Einträge für „northwindcloud.com“ und „www\.northwindcloud.com“ hinzuzufügen.
 
 > [!Note]  
-> Ein Domänenname kann über das [Azure-Portal](https://docs.microsoft.com/azure/app-service/manage-custom-dns-buy-domain) erworben werden. Um einer Web-App einen benutzerdefinierten DNS-Namen zuzuordnen, muss der [App Service-Plan](https://azure.microsoft.com/pricing/details/app-service/) der Web-App einen kostenpflichtigen Tarif (**Shared**, **Basic**, **Standard** oder **Premium**) aufweisen.
+> Ein Domänenname kann über das [Azure-Portal](/azure/app-service/manage-custom-dns-buy-domain) erworben werden. Um einer Web-App einen benutzerdefinierten DNS-Namen zuzuordnen, muss der [App Service-Plan](https://azure.microsoft.com/pricing/details/app-service/) der Web-App einen kostenpflichtigen Tarif (**Shared**, **Basic**, **Standard** oder **Premium**) aufweisen.
 
 ### <a name="create-and-map-cname-and-a-records"></a>Erstellen und Zuordnen von CNAME- und A-Einträgen
 
 #### <a name="access-dns-records-with-domain-provider"></a>Zugreifen auf DNS-Einträge mit Domänenanbieter
 
 > [!Note]  
->  Verwenden Sie Azure DNS, um einen benutzerdefinierten DNS-Namen für Azure-Web-Apps zu konfigurieren. Weitere Informationen finden Sie unter [Bereitstellen von benutzerdefinierten Domäneneinstellungen für einen Azure-Dienst mit Azure DNS](https://docs.microsoft.com/azure/dns/dns-custom-domain).
+>  Verwenden Sie Azure DNS, um einen benutzerdefinierten DNS-Namen für Azure-Web-Apps zu konfigurieren. Weitere Informationen finden Sie unter [Bereitstellen von benutzerdefinierten Domäneneinstellungen für einen Azure-Dienst mit Azure DNS](/azure/dns/dns-custom-domain).
 
 1. Melden Sie sich an der Website des Hauptanbieters an.
 
@@ -355,14 +355,14 @@ In diesem Teil führen wir Folgendes durch:
 > - Automatisieren der SSL-Zertifikatbindung mit Skripts.
 
 > [!Note]  
-> Rufen Sie, falls erforderlich, im Azure-Portal ein SSL-Kundenzertifikat ab, und binden Sie es an die Web-App. Weitere Informationen finden Sie im [Tutorial „App Service-Zertifikate“](https://docs.microsoft.com/azure/app-service/web-sites-purchase-ssl-web-site).
+> Rufen Sie, falls erforderlich, im Azure-Portal ein SSL-Kundenzertifikat ab, und binden Sie es an die Web-App. Weitere Informationen finden Sie im [Tutorial „App Service-Zertifikate“](/azure/app-service/web-sites-purchase-ssl-web-site).
 
 ### <a name="prerequisites"></a>Voraussetzungen
 
 Führen Sie im Rahmen dieser Lösung folgende Schritte aus:
 
-- [Erstellen einer App Service-App](https://docs.microsoft.com/azure/app-service/).
-- [Zuordnen eines benutzerdefinierten DNS-Namens zu Ihrer Web-App](https://docs.microsoft.com/azure/app-service/app-service-web-tutorial-custom-domain).
+- [Erstellen einer App Service-App](/azure/app-service/).
+- [Zuordnen eines benutzerdefinierten DNS-Namens zu Ihrer Web-App](/azure/app-service/app-service-web-tutorial-custom-domain).
 - Beschaffen eines SSL-Zertifikats von einer vertrauenswürdigen Zertifizierungsstelle und Verwenden des Schlüssels zum Signieren der Anforderung.
 
 ### <a name="requirements-for-your-ssl-certificate"></a>Anforderungen an Ihr SSL-Zertifikat
@@ -402,7 +402,7 @@ Um ein benutzerdefiniertes SSL-Zertifikat an die Web-App zu binden, muss der [Ap
 
     ![Überprüfen des Tarifs in der Web-App](media/solution-deployment-guide-geo-distributed/image35.png)
 
-Benutzerdefiniertes SSL wird im Tarif **Free** oder **Shared** nicht unterstützt. Führen Sie die Schritte im nächsten Abschnitt aus, um einen höheren Tarif auszuwählen, oder verwenden Sie die Seite **Tarif wählen**, und springen Sie zu [Hochladen und Binden Ihres SSL-Zertifikats](https://docs.microsoft.com/azure/app-service/app-service-web-tutorial-custom-ssl).
+Benutzerdefiniertes SSL wird im Tarif **Free** oder **Shared** nicht unterstützt. Führen Sie die Schritte im nächsten Abschnitt aus, um einen höheren Tarif auszuwählen, oder verwenden Sie die Seite **Tarif wählen**, und springen Sie zu [Hochladen und Binden Ihres SSL-Zertifikats](/azure/app-service/app-service-web-tutorial-custom-ssl).
 
 #### <a name="scale-up-your-app-service-plan"></a>Hochskalieren Ihres App Service-Plans
 
@@ -463,7 +463,7 @@ openssl pkcs12 -export -out myserver.pfx -inkey <private-key-file> -in <merged-c
 
 Definieren Sie bei entsprechender Aufforderung ein Exportkennwort zum späteren Hochladen Ihres SSL-Zertifikats in App Service.
 
-Gehen Sie wie folgt vor, wenn IIS oder **Certreq.exe** zum Generieren der Zertifikatanforderung verwendet werden: Installieren Sie das Zertifikat auf einem lokalen Computer, und [exportieren Sie das Zertifikat dann nach PFX](https://technet.microsoft.com/library/cc754329(v=ws.11).aspx).
+Gehen Sie wie folgt vor, wenn IIS oder **Certreq.exe** zum Generieren der Zertifikatanforderung verwendet werden: Installieren Sie das Zertifikat auf einem lokalen Computer, und [exportieren Sie das Zertifikat dann nach PFX](/previous-versions/windows/it-pro/windows-server-2008-R2-and-2008/cc754329(v=ws.11)).
 
 #### <a name="upload-the-ssl-certificate"></a>Hochladen des SSL-Zertifikats
 
@@ -508,13 +508,13 @@ Wenn der Upload des Zertifikats in App Service abgeschlossen ist, wird es in den
 
 #### <a name="remap-the-a-record-for-ip-ssl"></a>Neuzuordnen des A-Eintrags für IP-SSL
 
-Wenn IP-basiertes SSL in der Web-App nicht verwendet wird, können Sie mit [Testen von HTTPS für Ihre benutzerdefinierte Domäne](https://docs.microsoft.com/azure/app-service/app-service-web-tutorial-custom-ssl) fortfahren.
+Wenn IP-basiertes SSL in der Web-App nicht verwendet wird, können Sie mit [Testen von HTTPS für Ihre benutzerdefinierte Domäne](/azure/app-service/app-service-web-tutorial-custom-ssl) fortfahren.
 
 Standardmäßig verwendet die Web-App eine freigegebene öffentliche IP-Adresse. Wenn das Zertifikat per IP-basiertem SSL gebunden ist, erstellt App Service eine neue und dedizierte IP-Adresse für die Web-App.
 
 Wenn ein A-Eintrag der Web-App zugeordnet wird, muss die Domänenregistrierung mit der dedizierten IP-Adresse aktualisiert werden.
 
-Die Seite **Benutzerdefinierte Domäne** wird mit der neuen, dedizierten IP-Adresse aktualisiert. [Kopieren Sie diese IP-Adresse](https://docs.microsoft.com/azure/app-service/app-service-web-tutorial-custom-domain), und [ordnen Sie dieser neuen IP-Adresse dann den A-Eintrag erneut zu](https://docs.microsoft.com/azure/app-service/app-service-web-tutorial-custom-domain).
+Die Seite **Benutzerdefinierte Domäne** wird mit der neuen, dedizierten IP-Adresse aktualisiert. [Kopieren Sie diese IP-Adresse](/azure/app-service/app-service-web-tutorial-custom-domain), und [ordnen Sie dieser neuen IP-Adresse dann den A-Eintrag erneut zu](/azure/app-service/app-service-web-tutorial-custom-domain).
 
 #### <a name="test-https"></a>Testen von HTTPS
 
@@ -626,4 +626,4 @@ Die Weiterleitung des Datenverkehrs mit Azure Traffic Manager und geografieabhä
 
 ## <a name="next-steps"></a>Nächste Schritte
 
-- Weitere Informationen zu Azure-Cloudmustern finden Sie unter [Cloudentwurfsmuster](https://docs.microsoft.com/azure/architecture/patterns).
+- Weitere Informationen zu Azure-Cloudmustern finden Sie unter [Cloudentwurfsmuster](/azure/architecture/patterns).

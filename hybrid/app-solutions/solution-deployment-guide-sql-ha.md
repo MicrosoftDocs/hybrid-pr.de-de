@@ -7,16 +7,16 @@ ms.date: 11/05/2019
 ms.author: bryanla
 ms.reviewer: anajod
 ms.lastreviewed: 11/05/2019
-ms.openlocfilehash: ff6d5b9667e63a6b8d232b6dd93db2d8b12fd46d
-ms.sourcegitcommit: bb3e40b210f86173568a47ba18c3cc50d4a40607
-ms.translationtype: MT
+ms.openlocfilehash: 85b859457b9b54a973c5fc23329b927212b60a07
+ms.sourcegitcommit: d2def847937178f68177507be151df2aa8e25d53
+ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/17/2020
-ms.locfileid: "84910388"
+ms.lasthandoff: 07/20/2020
+ms.locfileid: "86477081"
 ---
 # <a name="deploy-a-sql-server-2016-availability-group-to-azure-and-azure-stack-hub"></a>Bereitstellen einer SQL Server 2016-Verfügbarkeitsgruppe in Azure und Azure Stack Hub
 
-In diesem Artikel werden Sie schrittweise durch die automatisierte Bereitstellung eines einfachen SQL Server 2016 Enterprise-Hochverfügbarkeitsclusters (HA) mit einem asynchronen Standort für die Notfallwiederherstellung (DR) in zwei Azure Stack Hub-Umgebungen geführt. Weitere Informationen zu SQL Server 2016 und zur Hochverfügbarkeit finden Sie unter [Always On-Verfügbarkeitsgruppen: eine Lösung mit Hochverfügbarkeit und Notfallwiederherstellung](https://docs.microsoft.com/sql/database-engine/availability-groups/windows/always-on-availability-groups-sql-server?view=sql-server-2016).
+In diesem Artikel werden Sie schrittweise durch die automatisierte Bereitstellung eines einfachen SQL Server 2016 Enterprise-Hochverfügbarkeitsclusters (HA) mit einem asynchronen Standort für die Notfallwiederherstellung (DR) in zwei Azure Stack Hub-Umgebungen geführt. Weitere Informationen zu SQL Server 2016 und zur Hochverfügbarkeit finden Sie unter [Always On-Verfügbarkeitsgruppen: eine Lösung mit Hochverfügbarkeit und Notfallwiederherstellung](/sql/database-engine/availability-groups/windows/always-on-availability-groups-sql-server?view=sql-server-2016).
 
 In dieser Lösung erstellen Sie eine Beispielumgebung, die Folgendes ermöglicht:
 
@@ -40,9 +40,9 @@ In dieser Lösung erstellen Sie eine Beispielumgebung, die Folgendes ermöglicht
 - Zwei verbundene integrierte Azure Stack Hub-Systeme (Azure Stack Hub). Diese Bereitstellung funktioniert nicht für das Azure Stack Development Kit (ASDK). Weitere Informationen zu Azure Stack Hub finden Sie in der [Übersicht zu Azure Stack](https://azure.microsoft.com/overview/azure-stack/).
 - Ein Mandantenabonnement für jede Azure Stack-Instanz.
   - **Notieren Sie sich jede Abonnement-ID und den Azure Resource Manager-Endpunkt für jede Azure Stack Hub-Instanz.**
-- Ein Dienstprinzipal für Azure Active Directory (Azure AD), der über Berechtigungen für das Mandantenabonnement für jede Azure Stack Hub-Instanz verfügt. Möglicherweise müssen Sie zwei Dienstprinzipale erstellen, wenn die Azure Stack Hub-Instanzen in unterschiedlichen Azure AD-Mandanten bereitgestellt sind. Informationen zum Erstellen eines Dienstprinzipals für Azure Stack Hub finden Sie unter [Verwenden einer App-Identität für den Zugriff auf Azure Stack Hub-Ressourcen](https://docs.microsoft.com/azure-stack/user/azure-stack-create-service-principals).
+- Ein Dienstprinzipal für Azure Active Directory (Azure AD), der über Berechtigungen für das Mandantenabonnement für jede Azure Stack Hub-Instanz verfügt. Möglicherweise müssen Sie zwei Dienstprinzipale erstellen, wenn die Azure Stack Hub-Instanzen in unterschiedlichen Azure AD-Mandanten bereitgestellt sind. Informationen zum Erstellen eines Dienstprinzipals für Azure Stack Hub finden Sie unter [Verwenden einer App-Identität für den Zugriff auf Azure Stack Hub-Ressourcen](/azure-stack/user/azure-stack-create-service-principals).
   - **Notieren Sie sich die Anwendungs-ID, den geheimen Clientschlüssel und den Mandantennamen (xxxxx.onmicrosoft.com) jedes Dienstprinzipals.**
-- SQL Server 2016 Enterprise syndiziert in jeden Marketplace von Azure Stack Hub. Weitere Informationen zur Marketplace-Syndikation finden Sie unter [Herunterladen von Marketplace-Elementen in Azure Stack Hub](https://docs.microsoft.com/azure-stack/operator/azure-stack-download-azure-marketplace-item).
+- SQL Server 2016 Enterprise syndiziert in jeden Marketplace von Azure Stack Hub. Weitere Informationen zur Marketplace-Syndikation finden Sie unter [Herunterladen von Marketplace-Elementen in Azure Stack Hub](/azure-stack/operator/azure-stack-download-azure-marketplace-item).
     **Stellen Sie sicher, dass Ihre Organisation über die geeigneten SQL-Lizenzen verfügt.**
 - [Docker für Windows](https://docs.docker.com/docker-for-windows/), auf Ihrem lokalen Computer installiert.
 
@@ -105,6 +105,6 @@ Docker-Images für jede Bereitstellung beseitigen Abhängigkeitsprobleme zwische
 
 ## <a name="next-steps"></a>Nächste Schritte
 
-- Verwenden Sie SQL Server Management Studio, um das Failover für den Cluster manuell auszuführen. Weitere Informationen finden Sie unter [Ausführen eines erzwungenen manuellen Failovers einer Always On-Verfügbarkeitsgruppe (SQL Server)](https://docs.microsoft.com/sql/database-engine/availability-groups/windows/perform-a-forced-manual-failover-of-an-availability-group-sql-server?view=sql-server-2017).
+- Verwenden Sie SQL Server Management Studio, um das Failover für den Cluster manuell auszuführen. Weitere Informationen finden Sie unter [Ausführen eines erzwungenen manuellen Failovers einer Always On-Verfügbarkeitsgruppe (SQL Server)](/sql/database-engine/availability-groups/windows/perform-a-forced-manual-failover-of-an-availability-group-sql-server?view=sql-server-2017).
 - Informieren Sie sich über Hybrid Cloud-Apps. Sehen Sie sich die Informationen zu [Hybrid Cloud-Lösungen](https://aka.ms/azsdevtutorials) an.
 - Ändern Sie den Code dieses Beispiels auf [GitHub](https://github.com/Azure-Samples/azure-intelligent-edge-patterns).

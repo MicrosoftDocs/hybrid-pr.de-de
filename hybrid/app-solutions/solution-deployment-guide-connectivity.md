@@ -7,12 +7,12 @@ ms.date: 11/05/2019
 ms.author: bryanla
 ms.reviewer: anajod
 ms.lastreviewed: 11/05/2019
-ms.openlocfilehash: 0e1a0fc4fb4110fdb406d4b4b2e72abb8f5412c9
-ms.sourcegitcommit: bb3e40b210f86173568a47ba18c3cc50d4a40607
-ms.translationtype: MT
+ms.openlocfilehash: 16c5d7820e8c865a9f88cb00da5cc7c854379414
+ms.sourcegitcommit: d2def847937178f68177507be151df2aa8e25d53
+ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/17/2020
-ms.locfileid: "84910315"
+ms.lasthandoff: 07/20/2020
+ms.locfileid: "86477285"
 ---
 # <a name="configure-hybrid-cloud-connectivity-using-azure-and-azure-stack-hub"></a>Konfigurieren der Hybrid Cloud-Konnektivität mithilfe von Azure und Azure Stack Hub
 
@@ -37,7 +37,7 @@ Es sind einige Komponenten erforderlich, um eine Hybrid-Verbindungsbereitstellun
 ### <a name="azure"></a>Azure
 
 - Wenn Sie kein Azure-Abonnement besitzen, können Sie ein [kostenloses Konto](https://azure.microsoft.com/free/?WT.mc_id=A261C142F) erstellen, bevor Sie beginnen.
-- Erstellen Sie eine [Web-App](https://docs.microsoft.com/vsts/build-release/apps/cd/azure/aspnet-core-to-azure-webapp?view=vsts&tabs=vsts) in Azure. Notieren Sie sich die Web-App-URL, da Sie sie in der Lösung benötigen.
+- Erstellen Sie eine [Web-App](/vsts/build-release/apps/cd/azure/aspnet-core-to-azure-webapp?tabs=vsts&view=vsts) in Azure. Notieren Sie sich die Web-App-URL, da Sie sie in der Lösung benötigen.
 
 ### <a name="azure-stack-hub"></a>Azure Stack Hub
 
@@ -69,7 +69,7 @@ In diesem Lösungsbeispiel wird davon ausgegangen, dass Sie bereits über Grundk
 
 #### <a name="solution-example-values"></a>Beispielwerte für die Lösung
 
-In den Beispielen dieser Lösung werden die folgenden Werte verwendet. Sie können diese Werte zum Erstellen einer Testumgebung verwenden oder zum besseren Verständnis der Beispiele heranziehen. Weitere Informationen zu den VPN Gateway-Einstellungen finden Sie unter [Informationen zu VPN Gateway-Einstellungen](https://docs.microsoft.com/azure/vpn-gateway/vpn-gateway-about-vpn-gateway-settings).
+In den Beispielen dieser Lösung werden die folgenden Werte verwendet. Sie können diese Werte zum Erstellen einer Testumgebung verwenden oder zum besseren Verständnis der Beispiele heranziehen. Weitere Informationen zu den VPN Gateway-Einstellungen finden Sie unter [Informationen zu VPN Gateway-Einstellungen](/azure/vpn-gateway/vpn-gateway-about-vpn-gateway-settings).
 
 Verbindungsangaben:
 
@@ -99,7 +99,7 @@ Netzwerk- und Subnetz-IP-Adressen:
 
 ## <a name="create-a-virtual-network-in-global-azure-and-azure-stack-hub"></a>Erstellen eines virtuellen Netzwerks in globalen Azure- und Azure Stack Hub-Instanzen
 
-Führen Sie die folgenden Schritte aus, um mit dem Portal ein virtuelles Netzwerk zu erstellen. Sie können diese [Beispielwerte](https://docs.microsoft.com/azure/vpn-gateway/vpn-gateway-howto-site-to-site-resource-manager-portal#values) verwenden, wenn Sie diesen Artikel nur als Lösung nutzen. Falls Sie den Artikel für die Konfiguration einer Produktionsumgebung verwenden, müssen Sie die Beispieleinstellungen durch Ihre eigenen Werte ersetzen.
+Führen Sie die folgenden Schritte aus, um mit dem Portal ein virtuelles Netzwerk zu erstellen. Sie können diese [Beispielwerte](/azure/vpn-gateway/vpn-gateway-howto-site-to-site-resource-manager-portal#values) verwenden, wenn Sie diesen Artikel nur als Lösung nutzen. Falls Sie den Artikel für die Konfiguration einer Produktionsumgebung verwenden, müssen Sie die Beispieleinstellungen durch Ihre eigenen Werte ersetzen.
 
 > [!IMPORTANT]
 > Die IP-Adressen in den VNet-Adressräumen von Azure oder Azure Stack Hub dürfen sich nicht überschneiden.
@@ -212,4 +212,4 @@ Die Verbindung wird auf der Seite **Verbindungen** des Gateways für virtuelle N
 
 ## <a name="next-steps"></a>Nächste Schritte
 
-- Weitere Informationen zu Azure-Cloudmustern finden Sie unter [Cloudentwurfsmuster](https://docs.microsoft.com/azure/architecture/patterns).
+- Weitere Informationen zu Azure-Cloudmustern finden Sie unter [Cloudentwurfsmuster](/azure/architecture/patterns).

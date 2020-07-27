@@ -7,12 +7,12 @@ ms.date: 11/05/2019
 ms.author: bryanla
 ms.reviewer: anajod
 ms.lastreviewed: 11/05/2019
-ms.openlocfilehash: 1b3c683dd3e4a68413f83fd3cc129d6e6f594e1b
-ms.sourcegitcommit: bb3e40b210f86173568a47ba18c3cc50d4a40607
-ms.translationtype: MT
+ms.openlocfilehash: 650eef0f144ecafab4586d93f72e1defdf4a61ce
+ms.sourcegitcommit: d2def847937178f68177507be151df2aa8e25d53
+ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/17/2020
-ms.locfileid: "84910519"
+ms.lasthandoff: 07/20/2020
+ms.locfileid: "86477251"
 ---
 # <a name="configure-hybrid-cloud-identity-for-azure-and-azure-stack-hub-apps"></a>Konfigurieren einer Hybrid Cloud-Identität für Azure- und Azure Stack Hub-Apps
 
@@ -69,4 +69,4 @@ Wenn Sie mithilfe von Code eine Verbindung mit Azure Stack Hub herstellen möch
 ## <a name="next-steps"></a>Nächste Schritte
 
 - Weitere Informationen zur Behandlung der Identität in Azure Stack Hub finden Sie unter [Identitätsarchitektur für Azure Stack Hub](/azure-stack/operator/azure-stack-identity-architecture.md).
-- Weitere Informationen zu Azure-Cloudmustern finden Sie unter [Cloudentwurfsmuster](https://docs.microsoft.com/azure/architecture/patterns).
+- Weitere Informationen zu Azure-Cloudmustern finden Sie unter [Cloudentwurfsmuster](/azure/architecture/patterns).

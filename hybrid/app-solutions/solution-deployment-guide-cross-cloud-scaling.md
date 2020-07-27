@@ -7,12 +7,12 @@ ms.date: 11/05/2019
 ms.author: bryanla
 ms.reviewer: anajod
 ms.lastreviewed: 11/05/2019
-ms.openlocfilehash: 740a8c0ec904fe8eb3f9744626bc9dd6655bdb52
-ms.sourcegitcommit: bb3e40b210f86173568a47ba18c3cc50d4a40607
-ms.translationtype: MT
+ms.openlocfilehash: 10cb042e2c6d0c6cb567e14072cd80bc663d686c
+ms.sourcegitcommit: d2def847937178f68177507be151df2aa8e25d53
+ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/17/2020
-ms.locfileid: "84910639"
+ms.lasthandoff: 07/20/2020
+ms.locfileid: "86477336"
 ---
 # <a name="deploy-an-app-that-scales-cross-cloud-using-azure-and-azure-stack-hub"></a>Bereitstellen einer App, die mithilfe von Azure und Azure Stack Hub cloudübergreifend skaliert wird
 
@@ -68,7 +68,7 @@ Mit der cloudübergreifenden Lösung wird sichergestellt, dass zwischen Umgebung
 
 ### <a name="get-a-custom-domain-and-configure-dns"></a>Abrufen einer benutzerdefinierten Domäne und Konfigurieren des DNS
 
-Aktualisieren Sie die DNS-Zonendatei für die Domäne. Azure AD überprüft die Eigentümerschaft für den Namen der benutzerdefinierten Domäne. Verwenden Sie [Azure DNS](https://docs.microsoft.com/azure/dns/dns-getstarted-portal) für Azure-/Office 365-/externe DNS-Einträge in Azure, oder fügen Sie den DNS-Eintrag bei einer [anderen DNS-Registrierungsstelle](https://support.office.com/article/Create-DNS-records-for-Office-365-when-you-manage-your-DNS-records-b0f3fdca-8a80-4e8e-9ef3-61e8a2a9ab23/) hinzu.
+Aktualisieren Sie die DNS-Zonendatei für die Domäne. Azure AD überprüft die Eigentümerschaft für den Namen der benutzerdefinierten Domäne. Verwenden Sie [Azure DNS](/azure/dns/dns-getstarted-portal) für Azure-/Office 365-/externe DNS-Einträge in Azure, oder fügen Sie den DNS-Eintrag bei einer [anderen DNS-Registrierungsstelle](https://support.office.com/article/Create-DNS-records-for-Office-365-when-you-manage-your-DNS-records-b0f3fdca-8a80-4e8e-9ef3-61e8a2a9ab23/) hinzu.
 
 1. Registrieren Sie eine benutzerdefinierte Domäne bei einer öffentlichen Registrierungsstelle.
 2. Melden Sie sich an der Domänennamen-Registrierungsstelle für die Domäne an. Unter Umständen ist ein genehmigter Administrator erforderlich, um die DNS-Updates durchzuführen.
@@ -97,7 +97,7 @@ Azure Repos
 
 ### <a name="create-self-contained-web-app-deployment-for-app-services-in-both-clouds"></a>Erstellen einer eigenständigen Web-App-Bereitstellung für App Services in beiden Clouds
 
-1. Bearbeiten Sie die Datei **WebApplication.csproj**. Wählen Sie `Runtimeidentifier` aus, und fügen Sie `win10-x64` hinzu. (Weitere Informationen finden Sie in der Dokumentation zur [eigenständigen Bereitstellung](https://docs.microsoft.com/dotnet/core/deploying/deploy-with-vs#simpleSelf).)
+1. Bearbeiten Sie die Datei **WebApplication.csproj**. Wählen Sie `Runtimeidentifier` aus, und fügen Sie `win10-x64` hinzu. (Weitere Informationen finden Sie in der Dokumentation zur [eigenständigen Bereitstellung](/dotnet/core/deploying/deploy-with-vs#simpleSelf).)
 
     ![Bearbeiten Projektdatei einer Web-App](media/solution-deployment-guide-cross-cloud-scaling/image3.png)
 
@@ -113,7 +113,7 @@ Azure Repos
 
     ![Hinzufügen von Code zur Web-App](media/solution-deployment-guide-cross-cloud-scaling/image4.png)
 
-3. Führen Sie den Buildvorgang aus. Der Buildvorgang für die [eigenständige Bereitstellung](https://docs.microsoft.com/dotnet/core/deploying/deploy-with-vs#simpleSelf) veröffentlicht Artefakte, die in Azure und Azure Stack Hub ausgeführt werden.
+3. Führen Sie den Buildvorgang aus. Der Buildvorgang für die [eigenständige Bereitstellung](/dotnet/core/deploying/deploy-with-vs#simpleSelf) veröffentlicht Artefakte, die in Azure und Azure Stack Hub ausgeführt werden.
 
 ## <a name="use-an-azure-hosted-agent"></a>Verwenden eines gehosteten Azure-Agents
 
@@ -211,7 +211,7 @@ Azure Pipelines und Azure DevOps Services bieten eine äußerst flexibel konfigu
 21. Speichern Sie alle Änderungen.
 
 > [!Note]  
-> Bei der vorlagenbasierten Erstellung einer Releasedefinition wurden einige Einstellungen für die Aufgaben unter Umständen automatisch als [Umgebungsvariablen](https://docs.microsoft.com/azure/devops/pipelines/release/variables?view=vsts&tabs=batch#custom-variables) definiert. Diese Einstellungen können in den Aufgabeneinstellungen nicht geändert werden. Zum Bearbeiten dieser Einstellungen müssen Sie das übergeordnete Umgebungselement auswählen.
+> Bei der vorlagenbasierten Erstellung einer Releasedefinition wurden einige Einstellungen für die Aufgaben unter Umständen automatisch als [Umgebungsvariablen](/azure/devops/pipelines/release/variables?tabs=batch&view=vsts#custom-variables) definiert. Diese Einstellungen können in den Aufgabeneinstellungen nicht geändert werden. Zum Bearbeiten dieser Einstellungen müssen Sie das übergeordnete Umgebungselement auswählen.
 
 ## <a name="publish-to-azure-stack-hub-via-visual-studio"></a>Veröffentlichen in Azure Stack Hub mit Visual Studio
 
@@ -254,7 +254,7 @@ Verwenden Sie [Azure Resource Manager-Vorlagen](https://azure.microsoft.com/reso
 
 #### <a name="create-self-contained-web-app-deployment-for-app-services-in-both-clouds"></a>Erstellen einer eigenständigen Web-App-Bereitstellung für App Services in beiden Clouds
 
-1. Bearbeiten Sie die Datei **WebApplication.csproj**: Wählen Sie `Runtimeidentifier` aus, und fügen Sie dann `win10-x64` hinzu. Weitere Informationen finden Sie in der Dokumentation zur [eigenständigen Bereitstellung](https://docs.microsoft.com/dotnet/core/deploying/deploy-with-vs#simpleSelf).
+1. Bearbeiten Sie die Datei **WebApplication.csproj**: Wählen Sie `Runtimeidentifier` aus, und fügen Sie dann `win10-x64` hinzu. Weitere Informationen finden Sie in der Dokumentation zur [eigenständigen Bereitstellung](/dotnet/core/deploying/deploy-with-vs#simpleSelf).
 
 2. Checken Sie den Code über den Team Explorer in Azure Repos ein.
 
@@ -268,7 +268,7 @@ Verwenden Sie [Azure Resource Manager-Vorlagen](https://azure.microsoft.com/reso
 
 3. Fügen Sie unter **Argumente** den Code **-r win10-x64** hinzu. Diese Hinzufügung ist erforderlich, um eine eigenständige Bereitstellung mit .NET Core auszulösen.
 
-4. Führen Sie den Buildvorgang aus. Der Buildvorgang für die [eigenständige Bereitstellung](https://docs.microsoft.com/dotnet/core/deploying/deploy-with-vs#simpleSelf) veröffentlicht Artefakte, die in Azure und Azure Stack Hub ausgeführt werden können.
+4. Führen Sie den Buildvorgang aus. Der Buildvorgang für die [eigenständige Bereitstellung](/dotnet/core/deploying/deploy-with-vs#simpleSelf) veröffentlicht Artefakte, die in Azure und Azure Stack Hub ausgeführt werden können.
 
 #### <a name="use-an-azure-hosted-build-agent"></a>Verwenden eines in Azure gehosteten Build-Agents
 
@@ -329,7 +329,7 @@ Die Erstellung einer Releasedefinition ist der letzte Schritt im App-Buildprozes
 23. Speichern Sie alle Änderungen.
 
 > [!Note]  
-> Bei der vorlagenbasierten Erstellung einer Releasedefinition werden einige Einstellungen für die Releaseaufgaben unter Umständen automatisch als [Umgebungsvariablen](https://docs.microsoft.com/azure/devops/pipelines/release/variables?view=vsts&tabs=batch#custom-variables) definiert. Diese Einstellungen können nicht in den Aufgabeneinstellungen geändert werden, sondern nur in den übergeordneten Umgebungselementen.
+> Bei der vorlagenbasierten Erstellung einer Releasedefinition werden einige Einstellungen für die Releaseaufgaben unter Umständen automatisch als [Umgebungsvariablen](/azure/devops/pipelines/release/variables?tabs=batch&view=vsts#custom-variables) definiert. Diese Einstellungen können nicht in den Aufgabeneinstellungen geändert werden, sondern nur in den übergeordneten Umgebungselementen.
 
 ## <a name="create-a-release"></a>Erstellen eines Release
 
@@ -361,4 +361,4 @@ Ein flexibler und stabiler Dienst für mehrere Clouds ermöglicht Datensicherhei
 
 ## <a name="next-steps"></a>Nächste Schritte
 
-- Weitere Informationen zu Azure-Cloudmustern finden Sie unter [Cloudentwurfsmuster](https://docs.microsoft.com/azure/architecture/patterns).
+- Weitere Informationen zu Azure-Cloudmustern finden Sie unter [Cloudentwurfsmuster](/azure/architecture/patterns).
