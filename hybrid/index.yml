@@ -10,17 +10,20 @@ metadata:
   author: BryanLa
   ms.author: bryanla
   ms.date: 06/30/2020
-  ms.openlocfilehash: 9793f34db13e324de65b719613c0f4dbf4bdf127
-  ms.sourcegitcommit: 8d75007af6ad574e0629208464bbadb97a5c438e
+  ms.openlocfilehash: 5e47f05293640339329914a3183fae51649ded4c
+  ms.sourcegitcommit: ad41cc782094d57b506a3a1d98209f6cf94f0f3b
   ms.translationtype: HT
   ms.contentlocale: de-DE
-  ms.lasthandoff: 07/22/2020
-  ms.locfileid: "86949660"
+  ms.lasthandoff: 07/24/2020
+  ms.locfileid: "87121806"
 highlightedContent:
   items:
   - title: Entdecken der neuen Azure Stack HCI-Lösung
     itemType: video
     url: https://azure.microsoft.com/resources/videos/discover-the-new-azure-stack-hci/
+  - title: 'Inspire 2020: Neuerungen in Azure Stack HCI'
+    itemType: video
+    url: https://myinspire.microsoft.com/sessions/4a50e354-b3a8-4d54-9d2a-9dc723ac1030
   - title: Azure Hybrid Virtual Event
     itemType: video
     url: https://www.youtube.com/playlist?list=PLLasX02E8BPDY8lteNSno4etuLx-6bALf
@@ -258,7 +261,7 @@ additionalContent:
         text: Worum handelt es sich bei Muster- und Lösungsbeispielen?
       - url: ./app-solutions/overview-app-design-considerations.md
         text: Überlegungen zum Entwurf von Hybrid-Apps
-    - title: Erkunden von Hybridmustern
+    - title: Erkunden von Mustern für Hybrid-Apps
       links:
       - url: ./app-solutions/pattern-cross-cloud-scale.md
         text: Cloudübergreifende Skalierung
@@ -268,7 +271,7 @@ additionalContent:
         text: Ermittlung der Kundenfrequenz (Einzelhandel)
       - url: ./app-solutions/pattern-geo-distributed.md
         text: Geografisch verteilte App
-    - title: Bereitstellen von Beispielen für Hybridlösungen
+    - title: Bereitstellen von Beispielen für Hybrid-App-Lösungen
       links:
       - url: ./app-solutions/solution-deployment-guide-cross-cloud-scaling.md
         text: Cloudübergreifende Skalierung
@@ -298,6 +301,8 @@ additionalContent:
         text: .NET-Entwicklung für Azure
       - url: https://github.com/likamrat/azure_arc
         text: Leitfäden für den schnellen Einstieg in Azure Arc
+      - url: https://github.com/Azure/AzureStackHCI-EvalGuide
+        text: Azure Stack HCI-Evaluierungshandbuch
       - url: https://catalog.azureiotsolutions.com/alldevices?filters={%2218%22:[%221%22]}
         text: Zertifiziert für Azure IoT Edge-Geräte
       - url: /samples/browse/
