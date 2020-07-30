@@ -10,12 +10,12 @@ metadata:
   author: BryanLa
   ms.author: bryanla
   ms.date: 06/30/2020
-  ms.openlocfilehash: 5e47f05293640339329914a3183fae51649ded4c
-  ms.sourcegitcommit: ad41cc782094d57b506a3a1d98209f6cf94f0f3b
+  ms.openlocfilehash: ab8146340f284af226f336af8fddd2a30977869d
+  ms.sourcegitcommit: 2efdd6422c2af773ad7890dcbc546e816e501c0e
   ms.translationtype: HT
   ms.contentlocale: de-DE
-  ms.lasthandoff: 07/24/2020
-  ms.locfileid: "87121806"
+  ms.lasthandoff: 07/28/2020
+  ms.locfileid: "87264096"
 highlightedContent:
   items:
   - title: Entdecken der neuen Azure Stack HCI-Lösung
@@ -238,7 +238,7 @@ conceptualContent:
     links:
     - url: /azure/avere-vfxt/avere-vfxt-overview
       itemType: overview
-      text: Avere vFXT for Azure
+      text: Avere vFXT für Azure
     - url: /azure/backup/
       itemType: overview
       text: Azure Backup
@@ -286,9 +286,11 @@ additionalContent:
     - title: Allgemeine Ressourcen
       links:
       - url: /azure-stack/operator/compare-azure-azure-stack
-        text: Azure Global und Azure Stack
+        text: Globale Azure-Cloud und Azure Stack
       - url: https://azure.microsoft.com/overview/azure-hybrid/
         text: Azure-Hybridfunktionen
+      - url: https://www.youtube.com/watch?v=to8D7Xl9SU8
+        text: Einführung in Azure Stack-Hybridanwendungen
       - url: https://customers.microsoft.com/en-us/search?sq="hybrid cloud"
         text: Kundenstimmen zu Hybrid Cloud
       - url: /learn
