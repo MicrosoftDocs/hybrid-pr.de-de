@@ -1,5 +1,5 @@
 ### YamlMime:Hub
-title: Azure Hybrid Cloud-Dokumentation
+title: Azure Hybrid-Dokumentation
 summary: Hier finden Sie Ressourcen zum Entwickeln und Betreiben von Hybridlösungen für die globale Cloud, Rechenzentren und den Edge-Bereich.
 brand: azure
 metadata:
@@ -9,13 +9,13 @@ metadata:
   ms.topic: hub-page
   author: BryanLa
   ms.author: bryanla
-  ms.date: 06/30/2020
-  ms.openlocfilehash: b888756accc1e538d358e91aec6740b392dafea0
-  ms.sourcegitcommit: 72dbbc933220a4e7273abf46ad3fc6032d122ca7
+  ms.date: 08/05/2020
+  ms.openlocfilehash: 09eca5be0d1b638b1ca5122c12f362ddde8559e8
+  ms.sourcegitcommit: e1bdde91a92840fe1da420148329fee36addc03e
   ms.translationtype: HT
   ms.contentlocale: de-DE
-  ms.lasthandoff: 07/31/2020
-  ms.locfileid: "87473790"
+  ms.lasthandoff: 08/06/2020
+  ms.locfileid: "87838514"
 highlightedContent:
   items:
   - title: Entdecken der neuen Azure Stack HCI-Lösung
@@ -178,7 +178,7 @@ conceptualContent:
       text: Azure Sentinel
     - url: /azure/active-directory/devices/concept-azure-ad-join-hybrid
       itemType: overview
-      text: Über Azure AD Hybrid eingebundene Geräte
+      text: In Azure AD eingebundene Hybridgeräte
   - title: Verwaltung
     links:
     - url: https://azure.microsoft.com/services/azure-arc/hybrid-data-services/
@@ -230,7 +230,7 @@ conceptualContent:
       text: Azure Traffic Manager
     - url: /azure/virtual-network/
       itemType: overview
-      text: Azure Virtual Network
+      text: Virtuelles Azure-Netzwerk
     - url: /azure/vpn-gateway/
       itemType: overview
       text: Azure VPN Gateway
