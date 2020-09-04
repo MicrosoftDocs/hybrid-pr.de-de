@@ -9,13 +9,13 @@ metadata:
   ms.topic: hub-page
   author: BryanLa
   ms.author: bryanla
-  ms.date: 08/05/2020
-  ms.openlocfilehash: 09eca5be0d1b638b1ca5122c12f362ddde8559e8
-  ms.sourcegitcommit: e1bdde91a92840fe1da420148329fee36addc03e
+  ms.date: 09/02/2020
+  ms.openlocfilehash: 8df4847263d2632d35f0817752fbdf69afbe01d3
+  ms.sourcegitcommit: 36f2c0f6e8ed4512b76d77dde8c4e7473cc4719c
   ms.translationtype: HT
   ms.contentlocale: de-DE
-  ms.lasthandoff: 08/06/2020
-  ms.locfileid: "87838514"
+  ms.lasthandoff: 09/03/2020
+  ms.locfileid: "89410773"
 highlightedContent:
   items:
   - title: Entdecken der neuen Azure Stack HCI-Lösung
@@ -187,12 +187,12 @@ conceptualContent:
     - url: /azure/azure-arc/kubernetes/
       itemType: overview
       text: Kubernetes mit Azure Arc-Aktivierung (Vorschauversion)
-    - url: /azure/azure-arc/
+    - url: /azure/azure-arc/servers
       itemType: overview
       text: Server mit Azure Arc-Aktivierung (Vorschauversion)
     - url: /azure/automation/
       itemType: overview
-      text: Azure-Automatisierung
+      text: Azure Automation
     - url: /azure/storage/files/
       itemType: overview
       text: Azure Files
@@ -268,6 +268,7 @@ conceptualContent:
 additionalContent:
   sections:
   - title: Hybridlösungen
+    summary: Hier finden Sie Leitfäden und Beispiele für die Untersuchung und Wiederverwendung für Ihre Hybridprojekte.
     items:
     - title: Muster- und Lösungsbeispiele für Hybrid-Apps
       links:
