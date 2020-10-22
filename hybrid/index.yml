@@ -10,14 +10,17 @@ metadata:
   author: BryanLa
   ms.author: bryanla
   ms.date: 09/02/2020
-  ms.openlocfilehash: fe346e09aba6e073f291037eb767a3936dea3a99
-  ms.sourcegitcommit: 1c9d681b45f3cc91fd6896badf998be68e284a35
+  ms.openlocfilehash: 66e51bad731b1235937d7cfa341153809307e151
+  ms.sourcegitcommit: 5631ed6b17942bf893e2dbad07d4aba274de8262
   ms.translationtype: HT
   ms.contentlocale: de-DE
-  ms.lasthandoff: 09/28/2020
-  ms.locfileid: "91407717"
+  ms.lasthandoff: 10/21/2020
+  ms.locfileid: "92334237"
 highlightedContent:
   items:
+  - title: Einführung in Azure Modular Data Center
+    itemType: video
+    url: https://azure.microsoft.com/blog/introducing-the-microsoft-azure-modular-datacenter/
   - title: 'Ignite 2020: Sitzungen zum Thema „Hybrid“'
     itemType: video
     url: https://myignite.microsoft.com/sessions?t={"from":"2020-09-22T00:00:00-07:00","to":"2020-09-25T23:59:00-07:00"}&q=hybrid
@@ -27,9 +30,6 @@ highlightedContent:
   - title: 'Ignite 2020: Intelligent Edge-Sitzungen'
     itemType: video
     url: https://myignite.microsoft.com/sessions?t={"from":"2020-09-22T00:00:00-07:00","to":"2020-09-25T23:59:00-07:00"}&q="intelligent edge"
-  - title: Entdecken der neuen Azure Stack HCI-Lösung
-    itemType: video
-    url: https://azure.microsoft.com/resources/videos/discover-the-new-azure-stack-hci/
   - title: 'Inspire 2020: Neuerungen in Azure Stack HCI'
     itemType: video
     url: https://myinspire.microsoft.com/sessions/4a50e354-b3a8-4d54-9d2a-9dc723ac1030
@@ -54,9 +54,11 @@ productDirectory:
   - title: Private Cloudplattformen für gehostete, lokale und mobile Rechenzentren
     imageSrc: media/index/azure-stack-hub.svg
     links:
-    - url: /azure-stack/operator
+    - url: /azure-stack#azure-stack-hub
       text: Azure Stack Hub
-    - url: /azure-stack/hci
+    - url: /azure-stack#azure-stack-hub
+      text: Azure Modular Data Center
+    - url: /azure-stack#azure-stack-hci
       text: Azure Stack HCI
   - title: Intelligente Edge-Plattformen für Geräte
     imageSrc: media/index/intelligent.svg
@@ -148,7 +150,7 @@ conceptualContent:
     - url: /azure-stack/operator/event-hubs-rp-overview
       itemType: overview
       text: Event Hubs in Azure Stack Hub
-  - title: Microsoft Edge
+  - title: Edge
     links:
     - url: /azure/databox-online/data-box-gateway-overview
       itemType: overview
@@ -242,7 +244,7 @@ conceptualContent:
       text: Azure Traffic Manager
     - url: /azure/virtual-network/
       itemType: overview
-      text: Azure Virtual Network
+      text: Virtuelles Azure-Netzwerk
     - url: /azure/vpn-gateway/
       itemType: overview
       text: Azure VPN Gateway
