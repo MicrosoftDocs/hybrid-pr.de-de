@@ -1,8 +1,8 @@
-- name: "Azure\_Hybrid-Dokumentation"
+- name: Dokumentation zu Hybrid- und Multicloudlösungen
   href: index.yml
 - name: Übersicht
   items:
-    - name: Beispiele für Hybridmuster und -lösungen
+    - name: Muster und Lösungsbeispiele
       href: overview-patterns-solution-examples.md
 - name: Muster
   items:
@@ -58,7 +58,7 @@
       href: 'https://aka.ms/edgetrainingdeploy'
 - name: Konzepte
   items:
-    - name: Überlegungen zum Entwurf von Hybrid-Apps
+    - name: Überlegungen beim App-Entwurf
       href: overview-app-design-considerations.md
 - name: Verwandte Themen
   items:
