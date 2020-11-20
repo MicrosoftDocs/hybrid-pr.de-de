@@ -1,32 +1,32 @@
 ### YamlMime:Landing
-title: Dokumentation zu Hybridmustern und -lösungen von Azure
-summary: Hier erfahren Sie, wie Sie Beispiele für Hybridmuster und -lösungen bei der App-Entwicklung nutzen. Azure und Azure Stack ermöglichen die Entwicklung von Hybridanwendungen, die auf einer Suite von intelligenten Clouddiensten und Intelligent Edge-Diensten aufbauen.
+title: Dokumentation zu Hybrid- und Multicloudmustern und -lösungen von Azure
+summary: Hier erfahren Sie, wie Sie bei der App-Entwicklung Hybrid- und Multicloudmuster und -lösungsbeispiele nutzen, die auf einer Sammlung intelligenter Clouddienste und Intelligent Edge-Dienste aufbauen.
 metadata:
-  title: Dokumentation zu Hybridmustern und -lösungen von Azure
-  description: Hier erfahren Sie, wie Sie Beispiele für Hybridmuster und -lösungen bei der App-Entwicklung nutzen. Azure und Azure Stack ermöglichen die Entwicklung von Hybridanwendungen, die auf einer Suite von intelligenten Clouddiensten und Intelligent Edge-Diensten aufbauen.
+  title: Dokumentation zu Hybrid- und Multicloudmustern und -lösungen von Azure
+  description: Hier erfahren Sie, wie Sie bei der App-Entwicklung Hybrid- und Multicloudmuster und -lösungsbeispiele nutzen, die auf einer Sammlung intelligenter Clouddienste und Intelligent Edge-Dienste aufbauen.
   ms.service: azure-stack
   ms.topic: landing-page
   author: BryanLa
   ms.author: bryanla
   ms.date: 10/31/2019
-  ms.openlocfilehash: 923e8aa2af78b5d23ba1f25d8b0eb5b80edc4f0a
-  ms.sourcegitcommit: bb3e40b210f86173568a47ba18c3cc50d4a40607
+  ms.openlocfilehash: f51256c555011744f847e457b8bac46a1b5c4b14
+  ms.sourcegitcommit: 40117c1f26640d276fcdb9c760bb4e508c0c6003
   ms.translationtype: HT
   ms.contentlocale: de-DE
-  ms.lasthandoff: 06/17/2020
-  ms.locfileid: "84909718"
+  ms.lasthandoff: 11/18/2020
+  ms.locfileid: "94872976"
 landingContent:
-- title: Informationen zu Hybridmustern und -lösungen
+- title: Informationen zu Hybrid- und Multicloudmustern und -lösungen
   linkLists:
   - linkListType: overview
     links:
-    - text: Worum handelt es sich bei Beispielen für Hybridmuster und -lösungen?
+    - text: Worum handelt es sich bei Muster- und Lösungsbeispielen?
       url: overview-patterns-solution-examples.md
   - linkListType: concept
     links:
-    - text: Überlegungen zum Entwurf von Hybrid-Apps
+    - text: Überlegungen beim App-Entwurf
       url: overview-app-design-considerations.md
-- title: Erkunden von Hybridmustern
+- title: Erkunden von Hybrid- und Multicloudmustern
   linkLists:
   - linkListType: architecture
     links:
@@ -38,7 +38,7 @@ landingContent:
       url: pattern-retail-footfall-detection.md
     - text: Geografisch verteilte App
       url: pattern-geo-distributed.md
-- title: Bereitstellen von Beispielen für Hybridlösungen
+- title: Bereitstellen von Hybrid- und Multicloudlösungsbeispielen
   linkLists:
   - linkListType: tutorial
     links:
