@@ -26,6 +26,8 @@
           href: pattern-cross-cloud-scale-onprem-data.md
         - name: Ermittlung der Kundenfrequenz (Einzelhandel)
           href: pattern-retail-footfall-detection.md
+        - name: Kubernetes-Cluster mit Hochverfügbarkeit
+          href: pattern-highly-available-kubernetes.md
         - name: Fehlbestandserkennung im Edge-Bereich
           href: pattern-out-of-stock-at-edge.md
 - name: Leitfäden zur Lösungsbereitstellung
@@ -40,6 +42,8 @@
       href: solution-deployment-guide-retail-footfall-detection.md
     - name: Geografisch verteilte App
       href: solution-deployment-guide-geo-distributed.md
+    - name: Kubernetes-Cluster mit Hochverfügbarkeit
+      href: solution-deployment-guide-highly-available-kubernetes.md
     - name: Hybridkonnektivität
       href: solution-deployment-guide-connectivity.md
     - name: Hybrididentität

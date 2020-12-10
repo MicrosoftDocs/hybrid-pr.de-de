@@ -10,12 +10,12 @@ metadata:
   author: BryanLa
   ms.author: bryanla
   ms.date: 11/16/2020
-  ms.openlocfilehash: 23c1d6e1444e637a8e012b2628d3dfbafe903b3e
-  ms.sourcegitcommit: 40117c1f26640d276fcdb9c760bb4e508c0c6003
+  ms.openlocfilehash: 2ca6a085610915882ad4d875b97b6f9ab53b1ed2
+  ms.sourcegitcommit: df7e3e6423c3d4e8a42dae3d1acfba1d55057258
   ms.translationtype: HT
   ms.contentlocale: de-DE
-  ms.lasthandoff: 11/18/2020
-  ms.locfileid: "94873022"
+  ms.lasthandoff: 12/09/2020
+  ms.locfileid: "96901523"
 highlightedContent:
   items:
   - title: Einführung in Azure Modular Data Center
@@ -250,7 +250,7 @@ conceptualContent:
       text: Azure Traffic Manager
     - url: /azure/virtual-network/
       itemType: overview
-      text: Virtuelles Azure-Netzwerk
+      text: Azure Virtual Network
     - url: /azure/vpn-gateway/
       itemType: overview
       text: Azure VPN Gateway
@@ -292,6 +292,8 @@ additionalContent:
         text: Ermittlung der Kundenfrequenz (Einzelhandel)
       - url: ./app-solutions/pattern-geo-distributed.md
         text: Geografisch verteilte App
+      - url: ./app-solutions/pattern-highly-available-kubernetes.md
+        text: Hochverfügbarer Kubernetes-Cluster
     - title: Bereitstellen von App-Lösungsbeispielen
       links:
       - url: ./app-solutions/solution-deployment-guide-cross-cloud-scaling.md
@@ -302,6 +304,8 @@ additionalContent:
         text: Ermittlung der Kundenfrequenz (Einzelhandel)
       - url: ./app-solutions/solution-deployment-guide-geo-distributed.md
         text: Geografisch verteilte App
+      - url: ./app-solutions/solution-deployment-guide-highly-available-kubernetes.md
+        text: Hochverfügbarer Kubernetes-Cluster
   - title: Evaluierungs- und Schulungsressourcen
     items:
     - title: Azure Stack

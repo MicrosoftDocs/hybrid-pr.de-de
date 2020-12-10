@@ -9,12 +9,12 @@ metadata:
   author: BryanLa
   ms.author: bryanla
   ms.date: 10/31/2019
-  ms.openlocfilehash: f51256c555011744f847e457b8bac46a1b5c4b14
-  ms.sourcegitcommit: 40117c1f26640d276fcdb9c760bb4e508c0c6003
+  ms.openlocfilehash: 388cfb13249491275d7223415f26f20c17fe8f54
+  ms.sourcegitcommit: df7e3e6423c3d4e8a42dae3d1acfba1d55057258
   ms.translationtype: HT
   ms.contentlocale: de-DE
-  ms.lasthandoff: 11/18/2020
-  ms.locfileid: "94872976"
+  ms.lasthandoff: 12/09/2020
+  ms.locfileid: "96901540"
 landingContent:
 - title: Informationen zu Hybrid- und Multicloudmustern und -lösungen
   linkLists:
@@ -70,3 +70,13 @@ landingContent:
     links:
     - text: Leitfaden zur Lösungsbereitstellung
       url: solution-deployment-guide-cross-cloud-scaling-onprem-data.md
+- title: Szenario mit hochverfügbarem Kubernetes-Cluster
+  linkLists:
+  - linkListType: architecture
+    links:
+    - text: Muster
+      url: pattern-highly-available-kubernetes.md
+  - linkListType: tutorial
+    links:
+    - text: Leitfaden zur Lösungsbereitstellung
+      url: solution-deployment-guide-highly-available-kubernetes.md
