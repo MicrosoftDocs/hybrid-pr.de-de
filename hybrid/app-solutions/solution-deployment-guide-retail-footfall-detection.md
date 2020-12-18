@@ -7,12 +7,12 @@ ms.date: 11/05/2019
 ms.author: bryanla
 ms.reviewer: anajod
 ms.lastreviewed: 11/05/2019
-ms.openlocfilehash: 5f2e18e164e54f60b1bb7a14026a0c75c7d7ce69
-ms.sourcegitcommit: d2def847937178f68177507be151df2aa8e25d53
+ms.openlocfilehash: 2177b32474dea695967e197acbd4bc1e18422d7b
+ms.sourcegitcommit: df7e3e6423c3d4e8a42dae3d1acfba1d55057258
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/20/2020
-ms.locfileid: "86477166"
+ms.lasthandoff: 12/09/2020
+ms.locfileid: "96901489"
 ---
 # <a name="deploy-an-ai-based-footfall-detection-solution-using-azure-and-azure-stack-hub"></a>Bereitstellen einer KI-basierten Lösung zur Ermittlung der Kundenfrequenz mithilfe von Azure und Azure Stack Hub
 
@@ -26,7 +26,7 @@ In diesem Thema lernen Sie Folgendes:
 > - Verwenden des Custom Vision AI Dev Kit für das Rückschließen auf Edge-Ebene
 
 > [!Tip]  
-> ![hybrid-pillars.png](./media/solution-deployment-guide-cross-cloud-scaling/hybrid-pillars.png)  
+> ![Diagramm der Hybridsäulen](./media/solution-deployment-guide-cross-cloud-scaling/hybrid-pillars.png)  
 > Microsoft Azure Stack Hub ist eine Erweiterung von Azure. Mit Azure Stack Hub holen Sie sich die Agilität und Innovation von Cloud Computing in Ihre lokale Umgebung. Sie erhalten die einzige Hybrid Cloud, mit der Sie Hybrid-Apps überall entwickeln und bereitstellen können.  
 > 
 > Im Artikel [Überlegungen zum Entwurf von Hybrid-Apps](overview-app-design-considerations.md) werden die wichtigen Aspekte in Bezug auf die Softwarequalität (Platzierung, Skalierbarkeit, Verfügbarkeit, Resilienz, Verwaltbarkeit und Sicherheit) beschrieben, die für das Entwerfen, Bereitstellen und Betreiben von Hybrid-Apps erforderlich sind. Die Überlegungen zum Entwurf dienen als Hilfe beim Optimieren des Designs von Hybrid-Apps, um für Produktionsumgebungen das Auftreten von Problemen zu minimieren.
@@ -44,7 +44,7 @@ Schritte vor dem Beginnen mit diesem Bereitstellungsleitfaden:
 - Erstellen Sie in Ihrem Verzeichnis zwei Dienstprinzipale:
   - Einen, der für die Nutzung mit Azure-Ressourcen eingerichtet ist und Zugriff auf den Geltungsbereich des Azure-Abonnements hat.
   - Einen, der für die Nutzung mit Azure Stack Hub-Ressourcen eingerichtet ist und Zugriff auf den Geltungsbereich des Azure Stack Hub-Abonnements hat.
-  - Informationen zum Erstellen von Dienstprinzipalen und Autorisieren des Zugriffs finden Sie unter [Verwenden einer App-Identität für den Ressourcenzugriff](/azure-stack/operator/azure-stack-create-service-principals.md). Wenn Sie die Azure CLI bevorzugen, siehe [Erstellen eines Azure-Dienstprinzipals mit der Azure CLI](/cli/azure/create-an-azure-service-principal-azure-cli?view=azure-cli-latest).
+  - Informationen zum Erstellen von Dienstprinzipalen und Autorisieren des Zugriffs finden Sie unter [Verwenden einer App-Identität für den Ressourcenzugriff](/azure-stack/operator/azure-stack-create-service-principals.md). Wenn Sie die Azure CLI bevorzugen, siehe [Erstellen eines Azure-Dienstprinzipals mit der Azure CLI](/cli/azure/create-an-azure-service-principal-azure-cli?view=azure-cli-latest&preserve-view=true).
 - Stellen Sie Azure Cognitive Services in Azure oder Azure Stack Hub bereit.
   - [Erfahren Sie zunächst mehr über Cognitive Services](https://azure.microsoft.com/services/cognitive-services/).
   - Lesen Sie dann [Bereitstellen von Azure Cognitive Services in Azure Stack Hub](/azure-stack/user/azure-stack-solution-template-cognitive-services.md), um Cognitive Services in Azure Stack Hub bereitzustellen. Zuerst müssen Sie sich für den Zugriff auf die Vorschauversion registrieren.
@@ -194,5 +194,5 @@ porter uninstall footfall-camera –tag intelligentedge/footfall-camera-deployme
 
 ## <a name="next-steps"></a>Nächste Schritte
 
-- Lesen Sie die [Überlegungen zum Entwurf von Hybrid-Apps](overview-app-design-considerations.md).
+- Erfahren Sie mehr über [Überlegungen zum Entwurf von Hybrid-Apps](overview-app-design-considerations.md).
 - Überprüfen Sie den [Code dieses Beispiels auf GitHub](https://github.com/Azure-Samples/azure-intelligent-edge-patterns/tree/master/footfall-analysis), und schlagen Sie Verbesserungen vor.

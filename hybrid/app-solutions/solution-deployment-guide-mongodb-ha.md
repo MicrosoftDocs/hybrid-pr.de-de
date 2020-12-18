@@ -7,14 +7,14 @@ ms.date: 11/05/2019
 ms.author: bryanla
 ms.reviewer: anajod
 ms.lastreviewed: 11/05/2019
-ms.openlocfilehash: def9abaa2a7231648f11453f66119399be015a4d
-ms.sourcegitcommit: 485a1f97fa1579364e2be1755cadfc5ea89db50e
+ms.openlocfilehash: 624f032def509d8e42d55807d72176e5fce85910
+ms.sourcegitcommit: df7e3e6423c3d4e8a42dae3d1acfba1d55057258
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/08/2020
-ms.locfileid: "91852506"
+ms.lasthandoff: 12/09/2020
+ms.locfileid: "96901506"
 ---
-# <a name="deploy-a-highly-available-mongodb-solution-to-azure-and-azure-stack-hub"></a>Bereitstellen einer MongoDB-Hochverfügbarkeitslösung in Azure und Azure Stack Hub
+# <a name="deploy-a-highly-available-mongodb-solution-across-two-azure-stack-hub-environments"></a>Bereitstellen einer MongoDB-Hochverfügbarkeitslösung in zwei Azure Stack Hub-Umgebungen
 
 In diesem Artikel werden Sie schrittweise durch die automatisierte Bereitstellung eines einfachen MongoDB-Hochverfügbarkeitsclusters (HA) mit einem Standort für die Notfallwiederherstellung (DR) in zwei Azure Stack Hub-Umgebungen geführt. Weitere Informationen zu MongoDB und zur Hochverfügbarkeit finden Sie unter [Replikatgruppenmitglieder](https://docs.mongodb.com/manual/core/replica-set-members/).
 

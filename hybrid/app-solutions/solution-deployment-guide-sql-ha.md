@@ -7,14 +7,14 @@ ms.date: 11/05/2019
 ms.author: bryanla
 ms.reviewer: anajod
 ms.lastreviewed: 11/05/2019
-ms.openlocfilehash: 2c20d621247ec8e1278feb092586232cc08d5480
-ms.sourcegitcommit: 485a1f97fa1579364e2be1755cadfc5ea89db50e
+ms.openlocfilehash: 0f857515a44ece7f967ade3dee8f493481709851
+ms.sourcegitcommit: c890f2c5e5e5f9f93c921f02dd1a6ca5026d5289
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/08/2020
-ms.locfileid: "91852472"
+ms.lasthandoff: 12/10/2020
+ms.locfileid: "97091801"
 ---
-# <a name="deploy-a-sql-server-2016-availability-group-to-azure-and-azure-stack-hub"></a>Bereitstellen einer SQL Server 2016-Verfügbarkeitsgruppe in Azure und Azure Stack Hub
+# <a name="deploy-a-sql-server-2016-availability-group-across-two-azure-stack-hub-environments"></a>Bereitstellen einer SQL Server 2016-Verfügbarkeitsgruppe in zwei Azure Stack Hub-Umgebungen
 
 In diesem Artikel werden Sie schrittweise durch die automatisierte Bereitstellung eines einfachen SQL Server 2016 Enterprise-Hochverfügbarkeitsclusters (HA) mit einem asynchronen Standort für die Notfallwiederherstellung (DR) in zwei Azure Stack Hub-Umgebungen geführt. Weitere Informationen zu SQL Server 2016 und zur Hochverfügbarkeit finden Sie unter [Always On-Verfügbarkeitsgruppen: eine Lösung mit Hochverfügbarkeit und Notfallwiederherstellung](/sql/database-engine/availability-groups/windows/always-on-availability-groups-sql-server?view=sql-server-2016).
 
