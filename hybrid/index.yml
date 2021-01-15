@@ -10,12 +10,12 @@ metadata:
   author: BryanLa
   ms.author: bryanla
   ms.date: 11/16/2020
-  ms.openlocfilehash: e56d862007c6fdf6d1754bdba78b11b713ebe56a
-  ms.sourcegitcommit: e4ecad490940e5951739b074c36188886e8f426c
+  ms.openlocfilehash: 880bbebe9b63a193b49815a4f2089f13ffc101e9
+  ms.sourcegitcommit: 97aa7e255491bee3a5a9680d9e622c8ffc0a8179
   ms.translationtype: HT
   ms.contentlocale: de-DE
-  ms.lasthandoff: 01/11/2021
-  ms.locfileid: "98104224"
+  ms.lasthandoff: 01/14/2021
+  ms.locfileid: "98211208"
 highlightedContent:
   items:
   - title: Einführung in Azure Modular Data Center
@@ -54,12 +54,14 @@ productDirectory:
   - title: Private Cloudplattformen für gehostete, lokale und mobile Rechenzentren
     imageSrc: media/index/azure-stack-hub.svg
     links:
+    - url: /azure-stack/mdc
+      text: Azure Modular Datacenter
+    - url: /azure-stack/hci
+      text: Azure Stack HCI
     - url: /azure-stack#azure-stack-hub
       text: Azure Stack Hub
-    - url: /azure-stack#azure-stack-hub
-      text: Azure Modular Data Center
-    - url: /azure-stack#azure-stack-hci
-      text: Azure Stack HCI
+    - url: /azure-stack/ruggedized
+      text: Azure Stack Hub Ruggedized
   - title: Intelligente Edge-Plattformen für Geräte
     imageSrc: media/index/intelligent.svg
     links:
