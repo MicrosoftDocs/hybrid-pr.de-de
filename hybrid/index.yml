@@ -9,18 +9,18 @@ metadata:
   ms.topic: hub-page
   author: BryanLa
   ms.author: bryanla
-  ms.date: 11/16/2020
-  ms.openlocfilehash: 880bbebe9b63a193b49815a4f2089f13ffc101e9
-  ms.sourcegitcommit: 97aa7e255491bee3a5a9680d9e622c8ffc0a8179
+  ms.date: 01/27/2020
+  ms.openlocfilehash: 2faa91477f1c27b59bf119c5d09b8b34c58b1830
+  ms.sourcegitcommit: 66a4168541ad9cc005962b08022cf3c3bbdf33e2
   ms.translationtype: HT
   ms.contentlocale: de-DE
-  ms.lasthandoff: 01/14/2021
-  ms.locfileid: "98211208"
+  ms.lasthandoff: 01/28/2021
+  ms.locfileid: "98925073"
 highlightedContent:
   items:
   - title: Einführung in Azure Modular Data Center
     itemType: video
-    url: https://azure.microsoft.com/blog/introducing-the-microsoft-azure-modular-datacenter/
+    url: https://azure.microsoft.com/resources/videos/azure-modular-datacenter/
   - title: 'Ignite 2020: Sitzungen zum Thema „Hybrid“'
     itemType: video
     url: https://myignite.microsoft.com/sessions?t={"from":"2020-09-22T00:00:00-07:00","to":"2020-09-25T23:59:00-07:00"}&q=hybrid
