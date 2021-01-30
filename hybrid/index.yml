@@ -10,12 +10,12 @@ metadata:
   author: BryanLa
   ms.author: bryanla
   ms.date: 01/27/2020
-  ms.openlocfilehash: 2faa91477f1c27b59bf119c5d09b8b34c58b1830
-  ms.sourcegitcommit: 66a4168541ad9cc005962b08022cf3c3bbdf33e2
+  ms.openlocfilehash: 4c976022df637c97995525c77abcc1d30dcd3d04
+  ms.sourcegitcommit: 75e60c2d9ae8cb18b7cc09d48a5abbd3a1f39a6b
   ms.translationtype: HT
   ms.contentlocale: de-DE
   ms.lasthandoff: 01/28/2021
-  ms.locfileid: "98925073"
+  ms.locfileid: "98983114"
 highlightedContent:
   items:
   - title: Einführung in Azure Modular Data Center
@@ -69,6 +69,8 @@ productDirectory:
       text: Azure IoT Edge
     - url: /azure-sphere
       text: Azure Sphere
+    - url: /azure/databox-online/
+      text: Azure Stack Edge
     - url: /windows/iot-core/
       text: Windows für IoT
 conceptualContent:
