@@ -9,15 +9,18 @@ metadata:
   ms.topic: hub-page
   author: BryanLa
   ms.author: bryanla
-  ms.date: 01/27/2020
-  ms.openlocfilehash: 4c976022df637c97995525c77abcc1d30dcd3d04
-  ms.sourcegitcommit: 75e60c2d9ae8cb18b7cc09d48a5abbd3a1f39a6b
+  ms.date: 02/04/2020
+  ms.openlocfilehash: eb1486993b16bfac0aa33f89e8e9b3f4542d950e
+  ms.sourcegitcommit: dffe241db7413529aff2216ae1739250603a149d
   ms.translationtype: HT
   ms.contentlocale: de-DE
-  ms.lasthandoff: 01/28/2021
-  ms.locfileid: "98983114"
+  ms.lasthandoff: 02/05/2021
+  ms.locfileid: "99586140"
 highlightedContent:
   items:
+  - title: 'IT Ops Talks: All Things Hybrid (mit Mark Russinovich)'
+    itemType: video
+    url: https://techcommunity.microsoft.com/t5/itops-talk-blog/bg-p/ITOpsTalkBlog/label-name/ITOps%20Talks?WT.mc_modinfra-12531-socuff
   - title: Einführung in Azure Modular Data Center
     itemType: video
     url: https://azure.microsoft.com/resources/videos/azure-modular-datacenter/
@@ -35,13 +38,7 @@ highlightedContent:
     url: https://myinspire.microsoft.com/sessions/4a50e354-b3a8-4d54-9d2a-9dc723ac1030
   - title: 'Build 2020: Sitzungen zum Thema „Hybrid“'
     itemType: video
-    url: https://mybuild.microsoft.com/sessions?q=hybrid&g=%255B%2522on-demand%2522%255D
-  - title: 'Build 2020: Azure Arc-Sitzungen'
-    itemType: video
-    url: https://mybuild.microsoft.com/sessions?q=%2522%2520Arc%2520%2522&g=%255B%2522on-demand%2522%255D
-  - title: 'Build 2020: Intelligent Edge-Sitzungen'
-    itemType: video
-    url: https://mybuild.microsoft.com/sessions?q=%2522%2520intelligent%2520edge%2520%2522%2520%2522%2520sql%2520edge%2520%2522
+    url: https://mybuild.microsoft.com/sessions?q=hybrid%2520%2522%2520Arc%2520%2522%2520%2522%2520intelligent%2520edge%2520%2522%2520%2522%2520sql%2520edge%2520%2522&g=%255B%2522on-demand%2522%255D
 productDirectory:
   title: Hybrid- und Multicloudplattform von Azure
   summary: Hier finden Sie Informationen zu Plattformen zum Entwickeln und Betreiben von Hybrid- und Multicloudlösungen.
@@ -254,7 +251,7 @@ conceptualContent:
       text: Azure Traffic Manager
     - url: /azure/virtual-network/
       itemType: overview
-      text: Azure Virtual Network
+      text: Virtuelles Azure-Netzwerk
     - url: /azure/vpn-gateway/
       itemType: overview
       text: Azure VPN Gateway
@@ -342,6 +339,8 @@ additionalContent:
         text: Azure Hybrid Virtual Event
       - url: /learn/modules/intro-to-azure-hybrid-services/
         text: Einführung in Azure Hybrid Cloud
+      - url: https://events.microsoft.com/
+        text: Katalog mit Microsoft-Veranstaltungen
       - url: /learn
         text: Microsoft Learn
     - title: Identität und Sicherheit
