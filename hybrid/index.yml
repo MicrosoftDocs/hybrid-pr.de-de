@@ -9,15 +9,18 @@ metadata:
   ms.topic: hub-page
   author: BryanLa
   ms.author: bryanla
-  ms.date: 02/04/2020
-  ms.openlocfilehash: eb1486993b16bfac0aa33f89e8e9b3f4542d950e
-  ms.sourcegitcommit: dffe241db7413529aff2216ae1739250603a149d
+  ms.date: 03/03/2021
+  ms.openlocfilehash: aa07f1cd8fb60bebe2a58fda0bbf3a416f53b161
+  ms.sourcegitcommit: eb57f22f9aff2a68b4fce5aab6e61d9f73649445
   ms.translationtype: HT
   ms.contentlocale: de-DE
-  ms.lasthandoff: 02/05/2021
-  ms.locfileid: "99586140"
+  ms.lasthandoff: 03/04/2021
+  ms.locfileid: "101839106"
 highlightedContent:
   items:
+  - title: Erstellen moderner Hybridanwendungen mit Azure Arc und Azure Stack
+    itemType: video
+    url: https://channel9.msdn.com/Shows/Azure-Friday/Building-modern-hybrid-applications-with-Azure-Arc-and-Azure-Stack
   - title: 'IT Ops Talks: All Things Hybrid (mit Mark Russinovich)'
     itemType: video
     url: https://techcommunity.microsoft.com/t5/itops-talk-blog/bg-p/ITOpsTalkBlog/label-name/ITOps%20Talks?WT.mc_modinfra-12531-socuff
