@@ -9,15 +9,24 @@ metadata:
   ms.topic: hub-page
   author: BryanLa
   ms.author: bryanla
-  ms.date: 03/03/2021
-  ms.openlocfilehash: aa07f1cd8fb60bebe2a58fda0bbf3a416f53b161
-  ms.sourcegitcommit: eb57f22f9aff2a68b4fce5aab6e61d9f73649445
+  ms.date: 03/09/2021
+  ms.openlocfilehash: 218f52c27dee54dd4265a9c1eebc6de330bd6154
+  ms.sourcegitcommit: a5851a7351c39249a58da8d0cf121bbf0b306dca
   ms.translationtype: HT
   ms.contentlocale: de-DE
-  ms.lasthandoff: 03/04/2021
-  ms.locfileid: "101839106"
+  ms.lasthandoff: 03/10/2021
+  ms.locfileid: "102606192"
 highlightedContent:
   items:
+  - title: 'Ignite 2021: Sitzungen zum Thema „Hybrid“'
+    itemType: video
+    url: https://myignite.microsoft.com/sessions?t={"from":"2021-03-02T00:00:00-07:00","to":"2021-03-04T23:59:00-07:00"}&q=hybrid
+  - title: 'Ignite 2021: Sitzungen zum Thema „Azure Arc“'
+    itemType: video
+    url: https://myignite.microsoft.com/sessions?t={"from":"2021-03-02T00:00:00-07:00","to":"2021-03-04T23:59:00-07:00"}&q=" Arc "
+  - title: 'Ignite 2021: Sitzungen zum Thema „Edge-KI“'
+    itemType: video
+    url: https://myignite.microsoft.com/sessions?t={"from":"2020-09-22T00:00:00-07:00","to":"2020-09-25T23:59:00-07:00"}&q=" AI edge"
   - title: Erstellen moderner Hybridanwendungen mit Azure Arc und Azure Stack
     itemType: video
     url: https://channel9.msdn.com/Shows/Azure-Friday/Building-modern-hybrid-applications-with-Azure-Arc-and-Azure-Stack
@@ -27,15 +36,6 @@ highlightedContent:
   - title: Einführung in Azure Modular Data Center
     itemType: video
     url: https://azure.microsoft.com/resources/videos/azure-modular-datacenter/
-  - title: 'Ignite 2020: Sitzungen zum Thema „Hybrid“'
-    itemType: video
-    url: https://myignite.microsoft.com/sessions?t={"from":"2020-09-22T00:00:00-07:00","to":"2020-09-25T23:59:00-07:00"}&q=hybrid
-  - title: 'Ignite 2020: Azure Arc-Sitzungen'
-    itemType: video
-    url: https://myignite.microsoft.com/sessions?t={"from":"2020-09-22T00:00:00-07:00","to":"2020-09-25T23:59:00-07:00"}&q=" Arc "
-  - title: 'Ignite 2020: Intelligent Edge-Sitzungen'
-    itemType: video
-    url: https://myignite.microsoft.com/sessions?t={"from":"2020-09-22T00:00:00-07:00","to":"2020-09-25T23:59:00-07:00"}&q="intelligent edge"
   - title: 'Inspire 2020: Neuerungen in Azure Stack HCI'
     itemType: video
     url: https://myinspire.microsoft.com/sessions/4a50e354-b3a8-4d54-9d2a-9dc723ac1030
