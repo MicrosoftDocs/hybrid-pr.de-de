@@ -10,12 +10,12 @@ metadata:
   author: BryanLa
   ms.author: bryanla
   ms.date: 03/09/2021
-  ms.openlocfilehash: 59508b4cce80dd3a18a3e36feef6690290e26168
-  ms.sourcegitcommit: 25bfa6f85c1295ecbaf24e812ccebf1b7220bef8
+  ms.openlocfilehash: 198095c4a96cfcca76a89b47ecc5f716b6b6770a
+  ms.sourcegitcommit: 817b61dd59371b24281419936295da239a2cca18
   ms.translationtype: HT
   ms.contentlocale: de-DE
-  ms.lasthandoff: 03/16/2021
-  ms.locfileid: "103600657"
+  ms.lasthandoff: 03/23/2021
+  ms.locfileid: "104891082"
 highlightedContent:
   items:
   - title: 'Ignite 2021: Sitzungen zum Thema „Hybrid“'
@@ -217,7 +217,7 @@ conceptualContent:
     - url: /azure/storage/files/
       itemType: overview
       text: Azure Files
-    - url: /azure-monitor
+    - url: /azure/azure-monitor
       itemType: overview
       text: Azure Monitor
     - url: /azure/site-recovery/
@@ -370,7 +370,7 @@ additionalContent:
         text: Leitfäden für den schnellen Einstieg in Azure Arc
       - url: /learn/browse/?terms=%22%20Arc%20%22
         text: Learn-Module für Azure Arc
-      - url: /describe-high-availability-disaster-recovery-strategies/
+      - url: /learn/modules/describe-high-availability-disaster-recovery-strategies/
         text: Beschreiben von Strategien für Hochverfügbarkeit und Notfallwiederherstellung
       - url: /learn/browse/?terms="disaster%20recovery"
         text: Learn-Module für die Notfallwiederherstellung
