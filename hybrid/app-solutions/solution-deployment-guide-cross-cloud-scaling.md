@@ -7,12 +7,12 @@ ms.date: 11/05/2019
 ms.author: bryanla
 ms.reviewer: anajod
 ms.lastreviewed: 11/05/2019
-ms.openlocfilehash: 5ae6c4323324fa104cd0e5c7b5198492be14b8eb
-ms.sourcegitcommit: 56980e3c118ca0a672974ee3835b18f6e81b6f43
+ms.openlocfilehash: ed2ad5bed8f4bd80d4a40ab7600842d5544ff97d
+ms.sourcegitcommit: 962334135b63ac99c715e7bc8fb9282648ba63c9
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/26/2020
-ms.locfileid: "88886814"
+ms.lasthandoff: 03/23/2021
+ms.locfileid: "104895413"
 ---
 # <a name="deploy-an-app-that-scales-cross-cloud-using-azure-and-azure-stack-hub"></a>Bereitstellen einer App, die mithilfe von Azure und Azure Stack Hub cloudübergreifend skaliert wird
 
@@ -30,7 +30,7 @@ In dieser Lösung erstellen Sie eine Beispielumgebung, die Folgendes ermöglicht
 > - Es wird beschrieben, wie Sie Ihre Bereitstellungen überwachen und nachverfolgen.
 
 > [!Tip]  
-> ![hybrid-pillars.png](./media/solution-deployment-guide-cross-cloud-scaling/hybrid-pillars.png)  
+> ![Diagramm der Hybridsäulen](./media/solution-deployment-guide-cross-cloud-scaling/hybrid-pillars.png)  
 > Microsoft Azure Stack Hub ist eine Erweiterung von Azure. Mit Azure Stack Hub holen Sie sich die Agilität und Innovation von Cloud Computing in Ihre lokale Umgebung, indem Sie die einzige Hybrid Cloud aktivieren, mit der Sie Hybrid-Apps überall entwickeln und bereitstellen können.  
 > 
 > Im Artikel [Überlegungen zum Entwurf von Hybrid-Apps](overview-app-design-considerations.md) werden die wichtigen Aspekte in Bezug auf die Softwarequalität (Platzierung, Skalierbarkeit, Verfügbarkeit, Resilienz, Verwaltbarkeit und Sicherheit) beschrieben, die für das Entwerfen, Bereitstellen und Betreiben von Hybrid-Apps erforderlich sind. Die Überlegungen zum Entwurf dienen als Hilfe beim Optimieren des Designs von Hybrid-Apps, um für Produktionsumgebungen das Auftreten von Problemen zu minimieren.
@@ -39,16 +39,16 @@ In dieser Lösung erstellen Sie eine Beispielumgebung, die Folgendes ermöglicht
 
 - Azure-Abonnement. Erstellen Sie bei Bedarf ein [kostenloses Konto](https://azure.microsoft.com/free/?WT.mc_id=A261C142F), bevor Sie beginnen.
 - Ein integriertes Azure Stack Hub-System oder eine Bereitstellung des Azure Stack Development Kit (ASDK).
-  - Eine Anleitung zur Installation von Azure Stack Hub finden Sie unter [Installieren des ASDK](/azure-stack/asdk/asdk-install.md).
+  - Eine Anleitung zur Installation von Azure Stack Hub finden Sie unter [Installieren des ASDK](/azure-stack/asdk/asdk-install).
   - Ein Skript zur Automatisierung der Vorgänge nach der Bereitstellung des ASDK finden Sie hier: [https://github.com/mattmcspirit/azurestack](https://github.com/mattmcspirit/azurestack)
   - Es kann einige Stunden dauern, bis diese Installation abgeschlossen ist.
-- Stellen Sie PaaS-Dienste als [App Service](/azure-stack/operator/azure-stack-app-service-deploy.md) für Azure Stack Hub bereit.
-- [Erstellen Sie Pläne/Angebote](/azure-stack/operator/service-plan-offer-subscription-overview.md) in Ihrer Azure Stack Hub-Umgebung.
-- [Erstellen Sie ein Mandantenabonnement](/azure-stack/operator/azure-stack-subscribe-plan-provision-vm.md) in Ihrer Azure Stack Hub-Umgebung.
+- Stellen Sie PaaS-Dienste als [App Service](/azure-stack/operator/azure-stack-app-service-deploy) für Azure Stack Hub bereit.
+- [Erstellen Sie Pläne/Angebote](/azure-stack/operator/service-plan-offer-subscription-overview) in Ihrer Azure Stack Hub-Umgebung.
+- [Erstellen Sie ein Mandantenabonnement](/azure-stack/operator/azure-stack-subscribe-plan-provision-vm) in Ihrer Azure Stack Hub-Umgebung.
 - Erstellen Sie eine Web-App in Ihrem Mandantenabonnement. Notieren Sie sich die URL der neuen Web-App zur späteren Verwendung.
 - Stellen Sie einen virtuellen Azure Pipelines-Computer in Ihrem Mandantenabonnement bereit.
 - Es wird ein virtueller Windows Server 2016-Computer mit .NET 3.5 benötigt. Diese VM wird im Mandantenabonnement unter Azure Stack Hub als privater Build-Agent erstellt.
-- Das [Image „Windows Server 2016 mit SQL 2017-VM“](/azure-stack/operator/azure-stack-add-vm-image.md) ist auf dem Azure Stack Hub Marketplace verfügbar. Falls dieses Image nicht verfügbar sein sollte, können Sie einen Azure Stack Hub-Bediener bitten, es der Umgebung hinzuzufügen.
+- Das [Image „Windows Server 2016 mit SQL 2017-VM“](/azure-stack/operator/azure-stack-add-vm-image) ist auf dem Azure Stack Hub Marketplace verfügbar. Falls dieses Image nicht verfügbar sein sollte, können Sie einen Azure Stack Hub-Bediener bitten, es der Umgebung hinzuzufügen.
 
 ## <a name="issues-and-considerations"></a>Probleme und Überlegungen
 
@@ -79,7 +79,7 @@ Aktualisieren Sie die DNS-Zonendatei für die Domäne. Azure AD überprüft die 
 Richten Sie Hybrid-CI/CD (Continuous Integration/Continuous Deployment) ein, um Web-Apps unter Azure und Azure Stack Hub bereitzustellen und Änderungen automatisch per Pushvorgang an beide Clouds zu übertragen.
 
 > [!Note]  
-> Azure Stack Hub mit den passenden syndizierten Images für die Ausführung (Windows Server und SQL) und eine App Service-Bereitstellung sind erforderlich. Weitere Informationen finden Sie in der App Service-Dokumentation unter [Voraussetzungen für das Bereitstellen von App Service unter Azure Stack Hub](/azure-stack/operator/azure-stack-app-service-before-you-get-started.md).
+> Azure Stack Hub mit den passenden syndizierten Images für die Ausführung (Windows Server und SQL) und eine App Service-Bereitstellung sind erforderlich. Weitere Informationen finden Sie in der App Service-Dokumentation unter [Voraussetzungen für das Bereitstellen von App Service unter Azure Stack Hub](/azure-stack/operator/azure-stack-app-service-before-you-get-started).
 
 ### <a name="add-code-to-azure-repos"></a>Hinzufügen von Code zu Azure Repos
 
@@ -157,7 +157,7 @@ Azure Pipelines und Azure DevOps Services bieten eine äußerst flexibel konfigu
   
       ![Auswählen des Pakets oder Ordners für die Azure App Service-Umgebung](media/solution-deployment-guide-cross-cloud-scaling/image12.png)
 
-      ![Auswählen des Pakets oder Ordners für die Azure App Service-Umgebung](media/solution-deployment-guide-cross-cloud-scaling/image13.png)
+      ![Dialogfeld 1: Ordnerauswahl](media/solution-deployment-guide-cross-cloud-scaling/image13.png)
 
 9. Speichern Sie alle Änderungen, und kehren Sie zur **Releasepipeline** zurück.
 
@@ -194,7 +194,7 @@ Azure Pipelines und Azure DevOps Services bieten eine äußerst flexibel konfigu
 
     ![Wählen Sie den Ordner für die Azure App Service-Bereitstellung aus.](media/solution-deployment-guide-cross-cloud-scaling/image22.png)
 
-    ![Wählen Sie den Ordner für die Azure App Service-Bereitstellung aus.](media/solution-deployment-guide-cross-cloud-scaling/image23.png)
+    ![Dialogfeld 2: Ordnerauswahl](media/solution-deployment-guide-cross-cloud-scaling/image23.png)
 
 18. Fügen Sie auf der Registerkarte „Variable“ eine Variable mit dem Namen `VSTS\_ARM\_REST\_IGNORE\_SSL\_ERRORS` hinzu, und legen Sie ihren Wert auf **true** und den Bereich auf „Azure Stack“ fest.
 
@@ -211,7 +211,7 @@ Azure Pipelines und Azure DevOps Services bieten eine äußerst flexibel konfigu
 21. Speichern Sie alle Änderungen.
 
 > [!Note]  
-> Bei der vorlagenbasierten Erstellung einer Releasedefinition wurden einige Einstellungen für die Aufgaben unter Umständen automatisch als [Umgebungsvariablen](/azure/devops/pipelines/release/variables?tabs=batch&view=vsts#custom-variables) definiert. Diese Einstellungen können in den Aufgabeneinstellungen nicht geändert werden. Zum Bearbeiten dieser Einstellungen müssen Sie das übergeordnete Umgebungselement auswählen.
+> Bei der vorlagenbasierten Erstellung einer Releasedefinition wurden einige Einstellungen für die Aufgaben unter Umständen automatisch als [Umgebungsvariablen](/azure/devops/pipelines/release/variables?tabs=batch#custom-variables) definiert. Diese Einstellungen können in den Aufgabeneinstellungen nicht geändert werden. Zum Bearbeiten dieser Einstellungen müssen Sie das übergeordnete Umgebungselement auswählen.
 
 ## <a name="publish-to-azure-stack-hub-via-visual-studio"></a>Veröffentlichen in Azure Stack Hub mit Visual Studio
 
@@ -242,7 +242,7 @@ Die Endpunktinformationen sind vorhanden, und die Verbindung zwischen Azure Pipe
 ## <a name="develop-the-app-build"></a>Entwickeln des App-Builds
 
 > [!Note]  
-> Azure Stack Hub mit den passenden syndizierten Images für die Ausführung (Windows Server und SQL) und eine App Service-Bereitstellung sind erforderlich. Weitere Informationen finden Sie unter [Voraussetzungen für das Bereitstellen von App Service in Azure Stack Hub](/azure-stack/operator/azure-stack-app-service-before-you-get-started.md).
+> Azure Stack Hub mit den passenden syndizierten Images für die Ausführung (Windows Server und SQL) und eine App Service-Bereitstellung sind erforderlich. Weitere Informationen finden Sie unter [Voraussetzungen für das Bereitstellen von App Service in Azure Stack Hub](/azure-stack/operator/azure-stack-app-service-before-you-get-started).
 
 Verwenden Sie [Azure Resource Manager-Vorlagen](https://azure.microsoft.com/resources/templates/), z. B. Web-App-Code aus Azure Repos, für die Bereitstellung in beiden Clouds.
 
@@ -329,7 +329,7 @@ Die Erstellung einer Releasedefinition ist der letzte Schritt im App-Buildprozes
 23. Speichern Sie alle Änderungen.
 
 > [!Note]  
-> Bei der vorlagenbasierten Erstellung einer Releasedefinition werden einige Einstellungen für die Releaseaufgaben unter Umständen automatisch als [Umgebungsvariablen](/azure/devops/pipelines/release/variables?tabs=batch&view=vsts#custom-variables) definiert. Diese Einstellungen können nicht in den Aufgabeneinstellungen geändert werden, sondern nur in den übergeordneten Umgebungselementen.
+> Bei der vorlagenbasierten Erstellung einer Releasedefinition werden einige Einstellungen für die Releaseaufgaben unter Umständen automatisch als [Umgebungsvariablen](/azure/devops/pipelines/release/variables?tabs=batch#custom-variables) definiert. Diese Einstellungen können nicht in den Aufgabeneinstellungen geändert werden, sondern nur in den übergeordneten Umgebungselementen.
 
 ## <a name="create-a-release"></a>Erstellen eines Release
 

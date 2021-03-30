@@ -7,12 +7,12 @@ ms.date: 11/05/2019
 ms.author: bryanla
 ms.reviewer: anajod
 ms.lastreviewed: 11/05/2019
-ms.openlocfilehash: 27d07070becfa902a715b451baae7c81c7e4b46f
-ms.sourcegitcommit: 56980e3c118ca0a672974ee3835b18f6e81b6f43
+ms.openlocfilehash: 9fa2c351d2c13d85fe1adb17a35e165de96ea2a2
+ms.sourcegitcommit: 962334135b63ac99c715e7bc8fb9282648ba63c9
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/26/2020
-ms.locfileid: "88886831"
+ms.lasthandoff: 03/23/2021
+ms.locfileid: "104895430"
 ---
 # <a name="direct-traffic-with-a-geo-distributed-app-using-azure-and-azure-stack-hub"></a>Weiterleiten von Datenverkehr mit einer geografisch verteilten App mithilfe von Azure und Azure Stack Hub
 
@@ -61,7 +61,7 @@ Es ist hilfreich, wenn Sie Folgendes wissen, bevor Sie den Speicherbedarf für e
 - **Benennungskonvention für die Apps:** Da mehrere Instanzen der App bereitgestellt werden, ist ein Name für jede Instanz der bereitgestellten App erforderlich. Bei App Service-Umgebungen für Power Apps kann der gleiche App-Name über mehrere Umgebungen hinweg genutzt werden. Da jede App Service-Umgebung ein eindeutiges Domänensuffix aufweist, können Entwickler den gleichen App-Namen in jeder Umgebung wiederverwenden. Ein Entwickler kann Apps beispielsweise wie folgt benennen: *myapp.foo1.p.azurewebsites.net*, *myapp.foo2.p.azurewebsites.net*, *myapp.foo3.p.azurewebsites.net* usw. Für die hier verwendete App hat jede App-Instanz einen eindeutigen Namen. Die verwendeten Namen für die App-Instanzen sind *webfrontend1*, *webfrontend2*, und *webfrontend3*.
 
 > [!Tip]  
-> ![hybrid-pillars.png](./media/solution-deployment-guide-cross-cloud-scaling/hybrid-pillars.png)  
+> ![Diagramm der Hybridsäulen](./media/solution-deployment-guide-cross-cloud-scaling/hybrid-pillars.png)  
 > Microsoft Azure Stack Hub ist eine Erweiterung von Azure. Mit Azure Stack Hub holen Sie sich die Agilität und Innovation von Cloud Computing in Ihre lokale Umgebung. Sie erhalten die einzige Hybrid Cloud, mit der Sie Hybrid-Apps überall entwickeln und bereitstellen können.  
 > 
 > Im Artikel [Überlegungen zum Entwurf von Hybrid-Apps](overview-app-design-considerations.md) werden die wichtigen Aspekte in Bezug auf die Softwarequalität (Platzierung, Skalierbarkeit, Verfügbarkeit, Resilienz, Verwaltbarkeit und Sicherheit) beschrieben, die für das Entwerfen, Bereitstellen und Betreiben von Hybrid-Apps erforderlich sind. Die Überlegungen zum Entwurf dienen als Hilfe beim Optimieren des Designs von Hybrid-Apps, um für Produktionsumgebungen das Auftreten von Problemen zu minimieren.
@@ -97,7 +97,7 @@ Aktualisieren Sie die DNS-Zonendatei für die Domäne. Azure AD kann dann die Ei
 Richten Sie Hybrid-CI/CD (Continuous Integration/Continuous Delivery) ein, um die Web-App unter Azure und Azure Stack Hub bereitzustellen und Änderungen automatisch per Pushvorgang an beide Clouds zu übertragen.
 
 > [!Note]  
-> Azure Stack Hub mit den passenden syndizierten Images für die Ausführung (Windows Server und SQL) und eine App Service-Bereitstellung sind erforderlich. Weitere Informationen finden Sie unter [Voraussetzungen für das Bereitstellen von App Service in Azure Stack Hub](/azure-stack/operator/azure-stack-app-service-before-you-get-started.md).
+> Azure Stack Hub mit den passenden syndizierten Images für die Ausführung (Windows Server und SQL) und eine App Service-Bereitstellung sind erforderlich. Weitere Informationen finden Sie unter [Voraussetzungen für das Bereitstellen von App Service in Azure Stack Hub](/azure-stack/operator/azure-stack-app-service-before-you-get-started).
 
 #### <a name="add-code-to-azure-repos"></a>Hinzufügen von Code zu Azure Repos
 
@@ -173,7 +173,7 @@ Azure DevOps Services bieten eine äußerst flexibel konfigurier- und verwaltbar
   
       ![Auswählen eines Pakets oder Ordners für eine Azure App Service-Umgebung in Azure DevOps Services](media/solution-deployment-guide-geo-distributed/image12.png)
 
-      ![Auswählen eines Pakets oder Ordners für eine Azure App Service-Umgebung in Azure DevOps Services](media/solution-deployment-guide-geo-distributed/image13.png)
+      ![Dialogfeld 1: Ordnerauswahl](media/solution-deployment-guide-geo-distributed/image13.png)
 
 9. Speichern Sie alle Änderungen, und kehren Sie zur **Releasepipeline** zurück.
 
@@ -212,7 +212,7 @@ Azure DevOps Services bieten eine äußerst flexibel konfigurier- und verwaltbar
 
     ![Auswählen eines Ordners für die Azure App Service-Bereitstellung in Azure DevOps Services](media/solution-deployment-guide-geo-distributed/image22.png)
 
-    ![Auswählen eines Ordners für die Azure App Service-Bereitstellung in Azure DevOps Services](media/solution-deployment-guide-geo-distributed/image23.png)
+    ![Dialogfeld 2: Ordnerauswahl](media/solution-deployment-guide-geo-distributed/image23.png)
 
 18. Fügen Sie auf der Registerkarte „Variable“ eine Variable mit dem Namen `VSTS\_ARM\_REST\_IGNORE\_SSL\_ERRORS` hinzu, und legen Sie ihren Wert auf **true** und den Bereich auf „Azure Stack Hub“ fest.
 
@@ -229,7 +229,7 @@ Azure DevOps Services bieten eine äußerst flexibel konfigurier- und verwaltbar
 21. Speichern Sie alle Änderungen.
 
 > [!Note]  
-> Bei der vorlagenbasierten Erstellung einer Releasedefinition wurden einige Einstellungen für die Aufgaben unter Umständen automatisch als [Umgebungsvariablen](/azure/devops/pipelines/release/variables?tabs=batch&view=vsts#custom-variables) definiert. Diese Einstellungen können in den Aufgabeneinstellungen nicht geändert werden. Zum Bearbeiten dieser Einstellungen müssen Sie das übergeordnete Umgebungselement auswählen.
+> Bei der vorlagenbasierten Erstellung einer Releasedefinition wurden einige Einstellungen für die Aufgaben unter Umständen automatisch als [Umgebungsvariablen](/azure/devops/pipelines/release/variables?tabs=batch#custom-variables) definiert. Diese Einstellungen können in den Aufgabeneinstellungen nicht geändert werden. Zum Bearbeiten dieser Einstellungen müssen Sie das übergeordnete Umgebungselement auswählen.
 
 ## <a name="part-2-update-web-app-options"></a>Teil 2: Aktualisieren der Web-App-Optionen
 
@@ -492,7 +492,7 @@ Wenn der Upload des Zertifikats in App Service abgeschlossen ist, wird es auf de
 
 2. Wählen Sie auf der Seite **SSL-Bindung hinzufügen** aus den Dropdownlisten den zu schützenden Domänennamen und das zu verwendende Zertifikat aus.
 
-3. Wählen Sie unter **SSL-Typ** aus, ob SSL auf der [**Servernamensanzeige (Server Name Indication, SNI)** ](https://en.wikipedia.org/wiki/Server_Name_Indication) oder der IP basieren soll.
+3. Wählen Sie unter **SSL-Typ** aus, ob SSL auf der [**Servernamensanzeige (Server Name Indication, SNI)**](https://en.wikipedia.org/wiki/Server_Name_Indication) oder der IP basieren soll.
 
     - **SNI-basiertes SSL**: Es können mehrere SNI-basierte SSL-Bindungen hinzugefügt werden. Bei dieser Option können mehrere zur selben IP-Adresse zugehörige Domänen durch mehrere SSL-Zertifikate geschützt werden. Die meisten modernen Browser (einschließlich Internet Explorer, Chrome, Firefox und Opera) unterstützen SNI (ausführlichere Informationen zur Browserunterstützung finden Sie unter [Servernamensanzeige](https://wikipedia.org/wiki/Server_Name_Indication)).
 
