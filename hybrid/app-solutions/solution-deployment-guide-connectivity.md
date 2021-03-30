@@ -7,12 +7,12 @@ ms.date: 11/05/2019
 ms.author: bryanla
 ms.reviewer: anajod
 ms.lastreviewed: 11/05/2019
-ms.openlocfilehash: 16c5d7820e8c865a9f88cb00da5cc7c854379414
-ms.sourcegitcommit: d2def847937178f68177507be151df2aa8e25d53
+ms.openlocfilehash: 4480f51b03082f2a0cbb7f2f213e05b7bf488646
+ms.sourcegitcommit: 962334135b63ac99c715e7bc8fb9282648ba63c9
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/20/2020
-ms.locfileid: "86477285"
+ms.lasthandoff: 03/23/2021
+ms.locfileid: "104895375"
 ---
 # <a name="configure-hybrid-cloud-connectivity-using-azure-and-azure-stack-hub"></a>Konfigurieren der Hybrid Cloud-Konnektivität mithilfe von Azure und Azure Stack Hub
 
@@ -25,7 +25,7 @@ In dieser Lösung erstellen Sie eine Beispielumgebung, die Folgendes ermöglicht
 > - Verwendung eines Legacysystems sowie einer über die Cloud skalierten App-Bereitstellung und entsprechender Ressourcen in globalen Azure-Instanzen
 
 > [!Tip]  
-> ![hybrid-pillars.png](./media/solution-deployment-guide-cross-cloud-scaling/hybrid-pillars.png)  
+> ![Diagramm der Hybridsäulen](./media/solution-deployment-guide-cross-cloud-scaling/hybrid-pillars.png)  
 > Microsoft Azure Stack Hub ist eine Erweiterung von Azure. Mit Azure Stack Hub holen Sie sich die Agilität und Innovation von Cloud Computing in Ihre lokale Umgebung. Sie erhalten die einzige Hybrid Cloud, mit der Sie Hybrid-Apps überall entwickeln und bereitstellen können.  
 > 
 > Im Artikel [Überlegungen zum Entwurf von Hybrid-Apps](overview-app-design-considerations.md) werden die wichtigen Aspekte in Bezug auf die Softwarequalität (Platzierung, Skalierbarkeit, Verfügbarkeit, Resilienz, Verwaltbarkeit und Sicherheit) beschrieben, die für das Entwerfen, Bereitstellen und Betreiben von Hybrid-Apps erforderlich sind. Die Überlegungen zum Entwurf dienen als Hilfe beim Optimieren des Designs von Hybrid-Apps, um für Produktionsumgebungen das Auftreten von Problemen zu minimieren.
@@ -37,7 +37,7 @@ Es sind einige Komponenten erforderlich, um eine Hybrid-Verbindungsbereitstellun
 ### <a name="azure"></a>Azure
 
 - Wenn Sie kein Azure-Abonnement besitzen, können Sie ein [kostenloses Konto](https://azure.microsoft.com/free/?WT.mc_id=A261C142F) erstellen, bevor Sie beginnen.
-- Erstellen Sie eine [Web-App](/vsts/build-release/apps/cd/azure/aspnet-core-to-azure-webapp?tabs=vsts&view=vsts) in Azure. Notieren Sie sich die Web-App-URL, da Sie sie in der Lösung benötigen.
+- Erstellen Sie eine [Web-App](/aspnet/core/tutorials/publish-to-azure-webapp-using-vs) in Azure. Notieren Sie sich die Web-App-URL, da Sie sie in der Lösung benötigen.
 
 ### <a name="azure-stack-hub"></a>Azure Stack Hub
 
@@ -47,9 +47,9 @@ Ein Azure-OEM/-Hardwarepartner kann eine Azure Stack Hub-Produktionsumgebung ber
    >[!Note]
    >Da die Bereitstellung des ASDK bis zu sieben Stunden dauern kann, sollten Sie entsprechend planen.
 
-- Stellen Sie PaaS-Dienste als [App Service](/azure-stack/operator/azure-stack-app-service-deploy.md) für Azure Stack Hub bereit.
-- [Erstellen Sie Pläne und Angebote](/azure-stack/operator/service-plan-offer-subscription-overview.md) in der Azure Stack Hub-Umgebung.
-- [Erstellen Sie ein Mandantenabonnement](/azure-stack/operator/azure-stack-subscribe-plan-provision-vm.md) in Ihrer Azure Stack Hub-Umgebung.
+- Stellen Sie PaaS-Dienste als [App Service](/azure-stack/operator/azure-stack-app-service-deploy) für Azure Stack Hub bereit.
+- [Erstellen Sie Pläne und Angebote](/azure-stack/operator/service-plan-offer-subscription-overview) in der Azure Stack Hub-Umgebung.
+- [Erstellen Sie ein Mandantenabonnement](/azure-stack/operator/azure-stack-subscribe-plan-provision-vm) in Ihrer Azure Stack Hub-Umgebung.
 
 ### <a name="azure-stack-hub-components"></a>Azure Stack Hub-Komponenten
 
@@ -58,7 +58,7 @@ Ein Azure Stack Hub-Bediener muss App Service bereitstellen, Pläne, Angebote un
 In diesem Lösungsbeispiel wird davon ausgegangen, dass Sie bereits über Grundkenntnisse in Bezug auf Azure und Azure Stack Hub verfügen. Lesen Sie die folgenden Artikel, um vor dem Starten der Lösung weitere Informationen zu erhalten:
 
 - [Einführung in Azure](https://azure.microsoft.com/overview/what-is-azure/)
-- [Übersicht über Azure Stack Hub](/azure-stack/operator/azure-stack-overview.md)
+- [Übersicht über Azure Stack Hub](/azure-stack/operator/azure-stack-overview)
 
 ### <a name="before-you-begin"></a>Voraussetzungen
 

@@ -7,12 +7,12 @@ ms.date: 11/05/2019
 ms.author: bryanla
 ms.reviewer: anajod
 ms.lastreviewed: 11/05/2019
-ms.openlocfilehash: ecc42a94e2c59531b2a2e933772b0d8ce8c58609
-ms.sourcegitcommit: 0d5b5336bdb969588d0b92e04393e74b8f682c3b
+ms.openlocfilehash: 0989859fd68847932d3e69defee59740a2bffd44
+ms.sourcegitcommit: 962334135b63ac99c715e7bc8fb9282648ba63c9
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "92353477"
+ms.lasthandoff: 03/23/2021
+ms.locfileid: "104895396"
 ---
 # <a name="deploy-hybrid-app-with-on-premises-data-that-scales-cross-cloud"></a>Bereitstellen einer Hybrid-App mit lokalen Daten mit cloudübergreifender Skalierung
 
@@ -47,7 +47,7 @@ Dieses Tutorial enthält die folgenden Aufgaben:
 In diesem Tutorial wird davon ausgegangen, dass Sie bereits über Grundkenntnisse in Bezug auf die globale Azure-Umgebung und Azure Stack Hub verfügen. Lesen Sie diese Artikel, falls Sie sich vor Beginn des Tutorials informieren möchten:
 
 - [Einführung in Azure](https://azure.microsoft.com/overview/what-is-azure/)
-- [Übersicht über Azure Stack Hub](/azure-stack/operator/azure-stack-overview.md)
+- [Übersicht über Azure Stack Hub](/azure-stack/operator/azure-stack-overview)
 
 In diesem Tutorial wird auch davon ausgegangen, dass Sie über ein Azure-Abonnement verfügen. Wenn Sie kein Abonnement besitzen, müssen Sie ein [kostenloses Konto erstellen](https://azure.microsoft.com/free/), bevor Sie beginnen.
 
@@ -55,7 +55,7 @@ In diesem Tutorial wird auch davon ausgegangen, dass Sie über ein Azure-Abonnem
 
 Vergewissern Sie sich zunächst, dass die folgenden Anforderungen erfüllt sind bzw. dass Folgendes vorhanden ist:
 
-- Ein Azure Stack Development Kit (ASDK) oder ein Abonnement für ein integriertes Azure Stack Hub-System. Befolgen Sie die Anleitung zum Bereitstellen des ASDK unter [Bereitstellen des ASDK mithilfe des Installationsprogramms](/azure-stack/asdk/asdk-install.md).
+- Ein Azure Stack Development Kit (ASDK) oder ein Abonnement für ein integriertes Azure Stack Hub-System. Befolgen Sie die Anleitung zum Bereitstellen des ASDK unter [Bereitstellen des ASDK mithilfe des Installationsprogramms](/azure-stack/asdk/asdk-install).
 - Für Ihre Azure Stack Hub-Installation muss Folgendes installiert sein:
   - Azure App Service. Arbeiten Sie mit Ihrem Azure Stack Hub-Betreiber zusammen, um Azure App Service in Ihrer Umgebung bereitzustellen und zu konfigurieren. Für dieses Tutorial muss App Service mindestens über eine (1) verfügbare dedizierte Workerrolle verfügen.
   - Ein Windows Server 2016-Image.
@@ -72,17 +72,17 @@ Vergewissern Sie sich zunächst, dass die folgenden Anforderungen erfüllt sind 
 
 1. Melden Sie sich am Azure Stack Hub-Benutzerportal an.
 
-2. Wählen Sie im **Dashboard** die Option **Marketplace** .
+2. Wählen Sie im **Dashboard** die Option **Marketplace**.
 
     ![Azure Stack Hub Marketplace](media/solution-deployment-guide-hybrid/image1.png)
 
-3. Wählen Sie unter **Marketplace** die Option **Compute** und dann **Mehr** . Wählen Sie unter **Mehr** das Image **Free SQL Server License: SQL Server 2017 Developer on Windows Server** (Kostenlose SQL Server-Lizenz: SQL Server 2017 Developer unter Windows Server) aus.
+3. Wählen Sie unter **Marketplace** die Option **Compute** und dann **Mehr**. Wählen Sie unter **Mehr** das Image **Free SQL Server License: SQL Server 2017 Developer on Windows Server** (Kostenlose SQL Server-Lizenz: SQL Server 2017 Developer unter Windows Server) aus.
 
     ![Auswählen eines VM-Images im Azure Stack Hub-Benutzerportal](media/solution-deployment-guide-hybrid/image2.png)
 
 4. Wählen Sie unter **Free SQL Server License: SQL Server 2017 Developer on Windows Server** (Kostenlose SQL Server-Lizenz: SQL Server 2017 Developer unter Windows Server) die Option **Erstellen** aus.
 
-5. Geben Sie unter **Grundlagen > Grundeinstellungen konfigurieren** einen **Namen** für den virtuellen Computer (VM) und einen **Benutzernamen** und ein **Kennwort** für den SQL Server-Systemadministrator an.  Wählen Sie in der Dropdownliste **Abonnement** das Abonnement aus, für das Sie die Bereitstellung durchführen möchten. Wählen Sie unter **Ressourcengruppe** die Option **Vorhandene auswählen** , und ordnen Sie die VM in derselben Ressourcengruppe wie Ihre Azure Stack Hub-Web-App an.
+5. Geben Sie unter **Grundlagen > Grundeinstellungen konfigurieren** einen **Namen** für den virtuellen Computer (VM) und einen **Benutzernamen** und ein **Kennwort** für den SQL Server-Systemadministrator an.  Wählen Sie in der Dropdownliste **Abonnement** das Abonnement aus, für das Sie die Bereitstellung durchführen möchten. Wählen Sie unter **Ressourcengruppe** die Option **Vorhandene auswählen**, und ordnen Sie die VM in derselben Ressourcengruppe wie Ihre Azure Stack Hub-Web-App an.
 
     ![Konfigurieren der Grundeinstellungen für die VM im Azure Stack Hub-Benutzerportal](media/solution-deployment-guide-hybrid/image3.png)
 
@@ -90,17 +90,17 @@ Vergewissern Sie sich zunächst, dass die folgenden Anforderungen erfüllt sind 
 
 7. Konfigurieren Sie unter **Einstellungen > Optionale Features konfigurieren** die folgenden Einstellungen:
 
-   - **Speicherkonto** : Erstellen Sie ein neues Konto, falls erforderlich.
+   - **Speicherkonto**: Erstellen Sie ein neues Konto, falls erforderlich.
    - **Virtuelles Netzwerk:**
 
      > [!Important]  
      > Stellen Sie sicher, dass Ihre SQL Server-VM in demselben virtuellen Netzwerk wie die VPN-Gateways bereitgestellt wird.
 
    - **Öffentliche IP-Adresse:** Verwenden Sie die Standardeinstellungen.
-   - **Netzwerksicherheitsgruppe** : (NSG). Erstellen Sie eine neue NSG.
+   - **Netzwerksicherheitsgruppe**: (NSG). Erstellen Sie eine neue NSG.
    - **Extensions and Monitoring** (Erweiterungen und Überwachung): Behalten Sie die Standardeinstellungen bei.
-   - **Diagnosespeicherkonto** : Erstellen Sie ein neues Konto, falls erforderlich.
-   - Wählen Sie **OK** , um Ihre Konfiguration zu speichern.
+   - **Diagnosespeicherkonto**: Erstellen Sie ein neues Konto, falls erforderlich.
+   - Wählen Sie **OK**, um Ihre Konfiguration zu speichern.
 
      ![Konfigurieren der optionalen VM-Features im Azure Stack Hub-Benutzerportal](media/solution-deployment-guide-hybrid/image4.png)
 
@@ -108,12 +108,12 @@ Vergewissern Sie sich zunächst, dass die folgenden Anforderungen erfüllt sind 
 
    - Wählen Sie unter **SQL-Konnektivität** die Option **Öffentlich (Internet)** aus.
    - Behalten Sie für **Port** den Standardwert **1433** bei.
-   - Wählen Sie unter **SQL-Authentifizierung** die Option **Aktivieren** .
+   - Wählen Sie unter **SQL-Authentifizierung** die Option **Aktivieren**.
 
      > [!Note]  
      > Wenn Sie die SQL-Authentifizierung aktivieren, sollten automatisch die „SQLAdmin“-Informationen eingefügt werden, die Sie unter **Grundlagen** konfiguriert haben.
 
-   - Behalten Sie für die übrigen Einstellungen die Standardwerte bei. Klicken Sie auf **OK** .
+   - Behalten Sie für die übrigen Einstellungen die Standardwerte bei. Klicken Sie auf **OK**.
 
      ![Konfigurieren der SQL Server-Einstellungen im Azure Stack Hub-Benutzerportal](media/solution-deployment-guide-hybrid/image5.png)
 
@@ -139,7 +139,7 @@ Azure App Service vereinfacht die Ausführung und Verwaltung einer Web-App. Da A
 
 App Service in Azure Stack Hub muss über das öffentliche Internet geroutet werden können, damit Benutzer auf Ihre App zugreifen können. Wenn Ihre Azure Stack Hub-Instanz über das Internet zugänglich ist, notieren Sie sich die öffentliche IP-Adresse oder URL der Azure Stack Hub-Web-App.
 
-Bei Verwendung eines ASDK können Sie [eine statische NAT-Zuordnung konfigurieren](/azure-stack/operator/azure-stack-create-vpn-connection-one-node.md#configure-the-nat-vm-on-each-asdk-for-gateway-traversal), um App Service außerhalb der virtuellen Umgebung verfügbar zu machen.
+Bei Verwendung eines ASDK können Sie [eine statische NAT-Zuordnung konfigurieren](/azure-stack/operator/azure-stack-create-vpn-connection-one-node#configure-the-nat-vm-on-each-asdk-for-gateway-traversal), um App Service außerhalb der virtuellen Umgebung verfügbar zu machen.
 
 ### <a name="connect-a-web-app-in-azure-to-a-hybrid-network"></a>Verbinden einer Web-App in Azure mit einem Hybridnetzwerk
 
@@ -153,11 +153,11 @@ Um die Konnektivität zwischen dem Web-Front-End in Azure und der SQL Server-Dat
 
 Das Gateway für virtuelle Netzwerke auf der Azure-Seite des Hybridnetzwerks muss Point-to-Site-Verbindungen zulassen, um in Azure App Service integriert werden zu können.
 
-1. Navigieren Sie im Azure-Portal zur Seite für das Gateway für virtuelle Netzwerke. Wählen Sie unter **Einstellungen** die Option **Punkt-zu-Standort-Konfiguration** .
+1. Navigieren Sie im Azure-Portal zur Seite für das Gateway für virtuelle Netzwerke. Wählen Sie unter **Einstellungen** die Option **Punkt-zu-Standort-Konfiguration**.
 
     ![Punkt-zu-Standort-Option im Gateway für virtuelle Azure-Netzwerke](media/solution-deployment-guide-hybrid/image8.png)
 
-2. Wählen Sie **Jetzt konfigurieren** , um die Punkt-zu-Standort-Konfiguration zu starten.
+2. Wählen Sie **Jetzt konfigurieren**, um die Punkt-zu-Standort-Konfiguration zu starten.
 
     ![Starten der Punkt-zu-Standort-Konfiguration im Gateway für virtuelle Azure-Netzwerke](media/solution-deployment-guide-hybrid/image9.png)
 
@@ -166,7 +166,7 @@ Das Gateway für virtuelle Netzwerke auf der Azure-Seite des Hybridnetzwerks mus
    > [!Note]  
    > Stellen Sie sicher, dass sich der angegebene Bereich nicht mit Adressbereichen überlappt, die bereits von Subnetzen in den globalen Azure- oder Azure Stack Hub-Komponenten des Hybridnetzwerks verwendet werden.
 
-   Deaktivieren Sie unter **Tunneltyp** die Option **IKEv2-VPN** . Wählen Sie **Speichern** , um die Punkt-zu-Standort-Konfiguration abzuschließen.
+   Deaktivieren Sie unter **Tunneltyp** die Option **IKEv2-VPN**. Wählen Sie **Speichern**, um die Punkt-zu-Standort-Konfiguration abzuschließen.
 
    ![Punkt-zu-Standort-Einstellungen im Gateway für virtuelle Azure-Netzwerke](media/solution-deployment-guide-hybrid/image10.png)
 
@@ -174,15 +174,15 @@ Das Gateway für virtuelle Netzwerke auf der Azure-Seite des Hybridnetzwerks mus
 
 1. Befolgen Sie die Anleitung unter [VNET-Integration, die ein Gateway erfordert](/azure/app-service/web-sites-integrate-with-vnet#gateway-required-vnet-integration), um die App mit dem Azure VNET zu verbinden.
 
-2. Navigieren Sie für den App Service-Plan, der die Web-App hostet, zu **Einstellungen** . Wählen Sie unter **Einstellungen** die Option **Netzwerk** .
+2. Navigieren Sie für den App Service-Plan, der die Web-App hostet, zu **Einstellungen**. Wählen Sie unter **Einstellungen** die Option **Netzwerk**.
 
     ![Konfigurieren des Netzwerks für den App Service-Plan](media/solution-deployment-guide-hybrid/image11.png)
 
-3. Wählen Sie unter **VNET-Integration** die Option **Klicken Sie zur Verwaltung hier** .
+3. Wählen Sie unter **VNET-Integration** die Option **Klicken Sie zur Verwaltung hier**.
 
     ![Verwalten der VNET-Integration für den App Service-Plan](media/solution-deployment-guide-hybrid/image12.png)
 
-4. Wählen Sie das VNET aus, das Sie konfigurieren möchten. Geben Sie unter **AN DAS VNET WEITERGELEITETE IP-ADRESSEN** den IP-Adressbereich für das Azure VNET, das Azure Stack Hub VNET und die Punkt-zu-Standort-Adressräume ein. Wählen Sie **Speichern** , um diese Einstellungen zu überprüfen und zu speichern.
+4. Wählen Sie das VNET aus, das Sie konfigurieren möchten. Geben Sie unter **AN DAS VNET WEITERGELEITETE IP-ADRESSEN** den IP-Adressbereich für das Azure VNET, das Azure Stack Hub VNET und die Punkt-zu-Standort-Adressräume ein. Wählen Sie **Speichern**, um diese Einstellungen zu überprüfen und zu speichern.
 
     ![IP-Adressbereiche für die Weiterleitung in der VNET-Integration](media/solution-deployment-guide-hybrid/image13.png)
 
@@ -192,7 +192,7 @@ Weitere Informationen zur Integration von App Service in Azure VNETs finden Sie 
 
 Das Gateway für lokale Netzwerke im virtuellen Azure Stack Hub-Netzwerk muss zum Weiterleiten von Datenverkehr aus dem Punkt-zu-Standort-Adressbereich von App Service konfiguriert werden.
 
-1. Navigieren Sie im Azure Stack Hub-Portal zu **Lokales Netzwerkgateway** . Wählen Sie unter **Einstellungen** die Option **Konfiguration** .
+1. Navigieren Sie im Azure Stack Hub-Portal zu **Lokales Netzwerkgateway**. Wählen Sie unter **Einstellungen** die Option **Konfiguration**.
 
     ![Konfigurationsoption für Gateway im lokalen Netzwerkgateway für Azure Stack Hub](media/solution-deployment-guide-hybrid/image14.png)
 
@@ -238,7 +238,7 @@ Fügen Sie SSL für Azure wie folgt hinzu:
 
 1. Stellen Sie sicher, dass das beschaffte SSL-Zertifikat für die von Ihnen erstellte Unterdomäne gültig ist. (Hierbei können auch Platzhalterzertifikate verwendet werden.)
 
-2. Befolgen Sie im Azure-Portal die Anleitung in den Abschnitten **Vorbereiten Ihrer Web-App** und **Binden Ihres SSL-Zertifikats** des Artikels [Binden eines vorhandenen benutzerdefinierten SSL-Zertifikats an Azure-Web-Apps](/azure/app-service/app-service-web-tutorial-custom-ssl). Wählen Sie unter **SSL-Typ** die Option **SNI-basiertes SSL** .
+2. Befolgen Sie im Azure-Portal die Anleitung in den Abschnitten **Vorbereiten Ihrer Web-App** und **Binden Ihres SSL-Zertifikats** des Artikels [Binden eines vorhandenen benutzerdefinierten SSL-Zertifikats an Azure-Web-Apps](/azure/app-service/app-service-web-tutorial-custom-ssl). Wählen Sie unter **SSL-Typ** die Option **SNI-basiertes SSL**.
 
 3. Leiten Sie den gesamten Datenverkehr an den HTTPS-Port um. Befolgen Sie die Anleitung im Abschnitt **Erzwingen von HTTPS** des Artikels [Binden eines vorhandenen benutzerdefinierten SSL-Zertifikats an Azure-Web-Apps](/azure/app-service/app-service-web-tutorial-custom-ssl).
 
@@ -304,42 +304,42 @@ Wenn Sie Ihre Web-App in einer App Service-Umgebung erstellen, beginnt sie mit e
 
     ![Aufskalieren von Azure App Service](media/solution-deployment-guide-hybrid/image16.png)
 
-2. Wählen Sie **Automatische Skalierung aktivieren** .
+2. Wählen Sie **Automatische Skalierung aktivieren**.
 
     ![Aktivieren der Autoskalierung in Azure App Service](media/solution-deployment-guide-hybrid/image17.png)
 
-3. Geben Sie unter **Name der Einstellung für die automatische Skalierung** einen Namen ein. Wählen Sie unter **Standard** für die Standardregel der automatischen Skalierung die Option **Basierend auf einer Metrik skalieren** . Legen Sie **Instanzgrenzwerte** auf **Minimum: 1** , **Maximum: 10** und **Standard: 1** fest.
+3. Geben Sie unter **Name der Einstellung für die automatische Skalierung** einen Namen ein. Wählen Sie unter **Standard** für die Standardregel der automatischen Skalierung die Option **Basierend auf einer Metrik skalieren**. Legen Sie **Instanzgrenzwerte** auf **Minimum: 1**, **Maximum: 10** und **Standard: 1** fest.
 
     ![Konfigurieren der Autoskalierung in Azure App Service](media/solution-deployment-guide-hybrid/image18.png)
 
-4. Wählen Sie **+ Regel hinzufügen** .
+4. Wählen Sie **+ Regel hinzufügen**.
 
-5. Wählen Sie unter **Metrikquelle** die Option **Aktuelle Ressource** . Verwenden Sie die folgenden Kriterien und Aktionen für die Regel.
+5. Wählen Sie unter **Metrikquelle** die Option **Aktuelle Ressource**. Verwenden Sie die folgenden Kriterien und Aktionen für die Regel.
 
 #### <a name="criteria"></a>Kriterien
 
-1. Wählen Sie unter **Zeitaggregation** die Option **Durchschnitt** .
+1. Wählen Sie unter **Zeitaggregation** die Option **Durchschnitt**.
 
-2. Wählen Sie unter **Metrikname** die Option **CPU-Prozentsatz** .
+2. Wählen Sie unter **Metrikname** die Option **CPU-Prozentsatz**.
 
-3. Wählen Sie unter **Operator** die Option **Größer als** .
+3. Wählen Sie unter **Operator** die Option **Größer als**.
 
    - Legen Sie **Schwellenwert** auf **50** fest.
    - Legen Sie die **Dauer** auf **10** fest.
 
 #### <a name="action"></a>Aktion
 
-1. Wählen Sie unter **Vorgang** die Option **Anzahl erhöhen um** .
+1. Wählen Sie unter **Vorgang** die Option **Anzahl erhöhen um**.
 
 2. Legen Sie **Instanzenanzahl** auf **2** fest.
 
 3. Legen Sie **Abklingen** auf **5** fest.
 
-4. Wählen Sie **Hinzufügen** .
+4. Wählen Sie **Hinzufügen**.
 
-5. Wählen Sie **+ Regel hinzufügen** .
+5. Wählen Sie **+ Regel hinzufügen**.
 
-6. Wählen Sie unter **Metrikquelle** die Option **Aktuelle Ressource** .
+6. Wählen Sie unter **Metrikquelle** die Option **Aktuelle Ressource**.
 
    > [!Note]  
    > Die aktuelle Ressource enthält den Namen bzw. die GUID Ihres App Service-Plans, und die Dropdownlisten **Ressourcentyp** und **Ressource** sind nicht verfügbar.
@@ -348,27 +348,27 @@ Wenn Sie Ihre Web-App in einer App Service-Umgebung erstellen, beginnt sie mit e
 
 Bei einer Verringerung des Datenverkehrs kann die Azure-Web-App die Anzahl von aktiven Instanzen reduzieren, um die Kosten zu senken. Diese Aktion ist weniger aggressiv als die horizontale Skalierung und minimiert die Auswirkungen auf App-Benutzer.
 
-1. Navigieren Sie zur Standardbedingung für das Aufskalieren unter **Standard** , und wählen Sie dann **+ Regel hinzufügen** aus. Verwenden Sie die folgenden Kriterien und Aktionen für die Regel.
+1. Navigieren Sie zur Standardbedingung für das Aufskalieren unter **Standard**, und wählen Sie dann **+ Regel hinzufügen** aus. Verwenden Sie die folgenden Kriterien und Aktionen für die Regel.
 
 #### <a name="criteria"></a>Kriterien
 
-1. Wählen Sie unter **Zeitaggregation** die Option **Durchschnitt** .
+1. Wählen Sie unter **Zeitaggregation** die Option **Durchschnitt**.
 
-2. Wählen Sie unter **Metrikname** die Option **CPU-Prozentsatz** .
+2. Wählen Sie unter **Metrikname** die Option **CPU-Prozentsatz**.
 
-3. Wählen Sie unter **Operator** die Option **Kleiner als** .
+3. Wählen Sie unter **Operator** die Option **Kleiner als**.
 
    - Legen Sie **Schwellenwert** auf **30** fest.
    - Legen Sie die **Dauer** auf **10** fest.
 
 #### <a name="action"></a>Aktion
 
-1. Wählen Sie unter **Vorgang** die Option **Anzahl verringern um** .
+1. Wählen Sie unter **Vorgang** die Option **Anzahl verringern um**.
 
    - Legen Sie **Instanzenanzahl** auf **1** fest.
    - Legen Sie **Abklingen** auf **5** fest.
 
-2. Wählen Sie **Hinzufügen** .
+2. Wählen Sie **Hinzufügen**.
 
 ## <a name="create-a-traffic-manager-profile-and-configure-cross-cloud-scaling"></a>Erstellen eines Traffic Manager-Profils mit anschließender Konfiguration für die cloudübergreifende Skalierung
 
@@ -376,17 +376,17 @@ Erstellen Sie mithilfe des Azure-Portals ein Traffic Manager-Profil, und konfig
 
 ### <a name="create-traffic-manager-profile"></a>Erstellen eines Traffic Manager-Profils
 
-1. Wählen Sie **Ressource erstellen** .
+1. Wählen Sie **Ressource erstellen**.
 2. Wählen Sie **Netzwerk** aus.
-3. Wählen Sie **Traffic Manager-Profil** , und konfigurieren Sie folgende Einstellungen:
+3. Wählen Sie **Traffic Manager-Profil**, und konfigurieren Sie folgende Einstellungen:
 
    - Geben Sie unter **Name** einen Namen für Ihr Profil ein. Dieser Name **muss** in der Zone „trafficmanager.net“ eindeutig sein und wird genutzt, um einen neuen DNS-Namen zu erstellen (z.B. „northwindstore.trafficmanager.net“).
-   - Wählen Sie unter **Routingmethode** die Option **Gewichtet** .
+   - Wählen Sie unter **Routingmethode** die Option **Gewichtet**.
    - Wählen Sie unter **Abonnement** das Abonnement aus, unter dem Sie dieses Profil erstellen möchten.
    - Erstellen Sie unter **Ressourcengruppe** eine neue Ressourcengruppe für dieses Profil.
    - Wählen Sie unter **Ressourcengruppenstandort** den Speicherort für die Ressourcengruppe aus. Diese Einstellung bezieht sich auf den Speicherort der Ressourcengruppe und hat keine Auswirkungen auf das global bereitgestellte Traffic Manager-Profil.
 
-4. Klicken Sie auf **Erstellen** .
+4. Klicken Sie auf **Erstellen**.
 
     ![Erstellen eines Traffic Manager-Profils](media/solution-deployment-guide-hybrid/image19.png)
 
@@ -396,35 +396,35 @@ Erstellen Sie mithilfe des Azure-Portals ein Traffic Manager-Profil, und konfig
 
 1. Suchen Sie nach dem Traffic Manager-Profil, das Sie erstellt haben. Wählen Sie das Profil aus, nachdem Sie die Navigation zur Ressourcengruppe für das Profil durchgeführt haben.
 
-2. Wählen Sie im **Traffic Manager-Profil** unter **EINSTELLUNGEN** die Option **Endpunkte** .
+2. Wählen Sie im **Traffic Manager-Profil** unter **EINSTELLUNGEN** die Option **Endpunkte**.
 
-3. Wählen Sie **Hinzufügen** .
+3. Wählen Sie **Hinzufügen**.
 
 4. Verwenden Sie unter **Endpunkt hinzufügen** die folgenden Einstellungen für Azure Stack Hub:
 
-   - Wählen Sie unter **Typ** die Option **Externer Endpunkt** .
+   - Wählen Sie unter **Typ** die Option **Externer Endpunkt**.
    - Geben Sie einen **Namen** für den Endpunkt ein.
    - Geben Sie unter **Fully-qualified domain name (FQDN) or IP** (Vollqualifizierter Domänenname [FQDN] oder IP) die externe URL für Ihre Azure Stack Hub-Web-App ein.
    - Behalten Sie für **Gewichtung** den Standardwert **1** bei. Diese Gewichtung bewirkt, dass der gesamte Datenverkehr an diesen Endpunkt geleitet wird, sofern sein Status intakt ist.
    - Lassen Sie **Als deaktiviert hinzufügen** deaktiviert.
 
-5. Wählen Sie **OK** , um den Azure Stack Hub-Endpunkt zu speichern.
+5. Wählen Sie **OK**, um den Azure Stack Hub-Endpunkt zu speichern.
 
 Als Nächstes konfigurieren Sie den Azure-Endpunkt.
 
-1. Wählen Sie unter **Traffic Manager-Profil** die Option **Endpunkte** .
+1. Wählen Sie unter **Traffic Manager-Profil** die Option **Endpunkte**.
 2. Wählen Sie **+ Hinzufügen** aus.
 3. Verwenden Sie unter **Endpunkt hinzufügen** die folgenden Einstellungen für Azure:
 
-   - Wählen Sie für **Typ** die Option **Azure-Endpunkt** .
+   - Wählen Sie für **Typ** die Option **Azure-Endpunkt**.
    - Geben Sie einen **Namen** für den Endpunkt ein.
-   - Wählen Sie unter **Zielressourcentyp** die Option **App Service** .
-   - Wählen Sie unter **Zielressource** die Option **App Service auswählen** , um eine Liste mit den Web-Apps für dasselbe Abonnement anzuzeigen.
+   - Wählen Sie unter **Zielressourcentyp** die Option **App Service**.
+   - Wählen Sie unter **Zielressource** die Option **App Service auswählen**, um eine Liste mit den Web-Apps für dasselbe Abonnement anzuzeigen.
    - Wählen Sie unter **Ressource** den App Service aus, den Sie als ersten Endpunkt hinzufügen möchten.
-   - Wählen Sie unter **Gewichtung** den Wert **2** . Diese Einstellung führt dazu, dass der gesamte Datenverkehr an diesen Endpunkt geleitet wird, wenn der primäre Endpunkt fehlerhaft ist oder Sie über eine Regel oder Warnung verfügen, mit der Datenverkehr bei der Auslösung umgeleitet wird.
+   - Wählen Sie unter **Gewichtung** den Wert **2**. Diese Einstellung führt dazu, dass der gesamte Datenverkehr an diesen Endpunkt geleitet wird, wenn der primäre Endpunkt fehlerhaft ist oder Sie über eine Regel oder Warnung verfügen, mit der Datenverkehr bei der Auslösung umgeleitet wird.
    - Lassen Sie **Als deaktiviert hinzufügen** deaktiviert.
 
-4. Wählen Sie **OK** , um den Azure-Endpunkt zu speichern.
+4. Wählen Sie **OK**, um den Azure-Endpunkt zu speichern.
 
 Nachdem beide Endpunkte konfiguriert wurden, werden sie im **Traffic Manager-Profil** aufgeführt, wenn Sie **Endpunkte** wählen. Im Beispiel im folgenden Screenshot werden zwei Endpunkte jeweils mit Status- und Konfigurationsinformationen angezeigt.
 
@@ -452,18 +452,18 @@ Sie verwenden diese Ansicht, um eine Warnung für das Aufskalieren und eine Warn
 
    - Geben Sie unter **Name** den Namen **Burst into Azure Cloud** ein.
    - Das Angeben einer **Beschreibung** ist optional.
-   - Wählen Sie unter **Quelle** > **Warnung bei** die Option **Metriken** .
+   - Wählen Sie unter **Quelle** > **Warnung bei** die Option **Metriken**.
    - Wählen Sie unter **Kriterien** Ihr Abonnement, die Ressourcengruppe für Ihr Traffic Manager-Profil und den Namen des Traffic Manager-Profils für die Ressource aus.
 
-4. Wählen Sie unter **Metrik** die Option **Anforderungsrate** .
-5. Wählen Sie unter **Bedingung** die Option **Größer als** .
+4. Wählen Sie unter **Metrik** die Option **Anforderungsrate**.
+5. Wählen Sie unter **Bedingung** die Option **Größer als**.
 6. Geben Sie unter **Schwellenwert** den Wert **2** ein.
-7. Wählen Sie unter **Zeitraum** die Option **In den letzten 5 Minuten** .
-8. Unter **Benachrichtigen über** :
-   - Aktivieren Sie das Kontrollkästchen **E-Mail-Besitzer, Mitwirkende und Leser** .
+7. Wählen Sie unter **Zeitraum** die Option **In den letzten 5 Minuten**.
+8. Unter **Benachrichtigen über**:
+   - Aktivieren Sie das Kontrollkästchen **E-Mail-Besitzer, Mitwirkende und Leser**.
    - Geben Sie unter **Zusätzliche Administrator-E-Mail-Adressen** Ihre E-Mail-Adresse ein.
 
-9. Wählen Sie in der Menüleiste die Option **Speichern** .
+9. Wählen Sie in der Menüleiste die Option **Speichern**.
 
 ### <a name="create-the-scale-in-alert"></a>Erstellen der Warnung für das Abskalieren
 
@@ -473,18 +473,18 @@ Sie verwenden diese Ansicht, um eine Warnung für das Aufskalieren und eine Warn
 
    - Geben Sie unter **Name** den Namen **Scale back into Azure Stack Hub** ein.
    - Das Angeben einer **Beschreibung** ist optional.
-   - Wählen Sie unter **Quelle** > **Warnung bei** die Option **Metriken** .
+   - Wählen Sie unter **Quelle** > **Warnung bei** die Option **Metriken**.
    - Wählen Sie unter **Kriterien** Ihr Abonnement, die Ressourcengruppe für Ihr Traffic Manager-Profil und den Namen des Traffic Manager-Profils für die Ressource aus.
 
-4. Wählen Sie unter **Metrik** die Option **Anforderungsrate** .
-5. Wählen Sie unter **Bedingung** die Option **Kleiner als** .
+4. Wählen Sie unter **Metrik** die Option **Anforderungsrate**.
+5. Wählen Sie unter **Bedingung** die Option **Kleiner als**.
 6. Geben Sie unter **Schwellenwert** den Wert **2** ein.
-7. Wählen Sie unter **Zeitraum** die Option **In den letzten 5 Minuten** .
-8. Unter **Benachrichtigen über** :
-   - Aktivieren Sie das Kontrollkästchen **E-Mail-Besitzer, Mitwirkende und Leser** .
+7. Wählen Sie unter **Zeitraum** die Option **In den letzten 5 Minuten**.
+8. Unter **Benachrichtigen über**:
+   - Aktivieren Sie das Kontrollkästchen **E-Mail-Besitzer, Mitwirkende und Leser**.
    - Geben Sie unter **Zusätzliche Administrator-E-Mail-Adressen** Ihre E-Mail-Adresse ein.
 
-9. Wählen Sie in der Menüleiste die Option **Speichern** .
+9. Wählen Sie in der Menüleiste die Option **Speichern**.
 
 Im folgenden Screenshot sind die Warnungen für das Auf- und Abskalieren dargestellt.
 
@@ -502,14 +502,14 @@ Wenn Ihre Website die von Ihnen konfigurierten Schwellenwerte erreicht, erhalten
 
     ![Traffic Manager-Endpunkte im Azure-Portal](media/solution-deployment-guide-hybrid/image20.png)
 
-2. Wählen Sie **Endpunkte** .
-3. Wählen Sie die Option **Azure-Endpunkt** .
-4. Wählen Sie unter **Status** die Option **Aktiviert** und dann **Speichern** .
+2. Wählen Sie **Endpunkte**.
+3. Wählen Sie die Option **Azure-Endpunkt**.
+4. Wählen Sie unter **Status** die Option **Aktiviert** und dann **Speichern**.
 
     ![Aktivieren des Azure-Endpunkts im Azure-Portal](media/solution-deployment-guide-hybrid/image23.png)
 
-5. Wählen Sie unter **Endpunkte** für das Traffic Manager-Profil die Option **Externer Endpunkt** .
-6. Wählen Sie unter **Status** die Option **Deaktiviert** und dann **Speichern** .
+5. Wählen Sie unter **Endpunkte** für das Traffic Manager-Profil die Option **Externer Endpunkt**.
+6. Wählen Sie unter **Status** die Option **Deaktiviert** und dann **Speichern**.
 
     ![Deaktivieren des Azure Stack Hub-Endpunkts im Azure-Portal](media/solution-deployment-guide-hybrid/image24.png)
 

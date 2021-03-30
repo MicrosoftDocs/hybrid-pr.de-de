@@ -7,12 +7,12 @@ ms.date: 10/31/2019
 ms.author: bryanla
 ms.reviewer: anajod
 ms.lastreviewed: 10/31/2019
-ms.openlocfilehash: 0bf07bb38537f530a0adb3569c43d53af13b8d56
-ms.sourcegitcommit: bb3e40b210f86173568a47ba18c3cc50d4a40607
-ms.translationtype: MT
+ms.openlocfilehash: 866557ec3af2337e9f034da84cf417675508563b
+ms.sourcegitcommit: 962334135b63ac99c715e7bc8fb9282648ba63c9
+ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/17/2020
-ms.locfileid: "84910466"
+ms.lasthandoff: 03/23/2021
+ms.locfileid: "104895328"
 ---
 # <a name="footfall-detection-pattern"></a>Muster zur Ermittlung der Kundenfrequenz
 
@@ -50,7 +50,7 @@ Diese Lösung verwendet die folgenden Komponenten:
 | Azure | [Azure Event Hubs](/azure/event-hubs/) | Azure Event Hubs bietet eine skalierbare Plattform für die Erfassung anonymisierter Daten, die sich nahtlos in Azure Stream Analytics integrieren lassen. |
 |  | [Azure Stream Analytics](/azure/stream-analytics/) | Ein Azure Stream Analytics-Auftrag aggregiert die anonymisierten Daten und gruppiert sie zur Visualisierung in 15 Sekunden große Zeitfenster. |
 |  | [Microsoft Power BI](https://powerbi.microsoft.com/) | Power BI bietet eine benutzerfreundliche Dashboardschnittstelle zur Anzeige der Ausgabe von Azure Stream Analytics. |
-| Azure Stack Hub | [App Service](/azure-stack/operator/azure-stack-app-service-overview.md) | Der App Service-Ressourcenanbieter stellt eine Basis für Edgekomponenten bereit, u. a. Hosting- und Verwaltungsfeatures für Web-Apps/-APIs und Azure Functions. |
+| Azure Stack Hub | [App Service](/azure-stack/operator/azure-stack-app-service-overview) | Der App Service-Ressourcenanbieter stellt eine Basis für Edgekomponenten bereit, u. a. Hosting- und Verwaltungsfeatures für Web-Apps/-APIs und Azure Functions. |
 | | Cluster für die [AKS-Engine](https://github.com/Azure/aks-engine) (Azure Kubernetes Service) | Der AKS-Ressourcenanbieter mit dem in Azure Stack Hub bereitgestellten AKS-Engine-Cluster bietet eine skalierbare, resiliente Engine für die Ausführung des Containers der Gesichtserkennungs-API. |
 | | [Container der Gesichtserkennungs-API](/azure/cognitive-services/face/face-how-to-install-containers) in Azure Cognitive Services| Der Azure Cognitive Services-Ressourcenanbieter mit Containern der Gesichtserkennungs-API liefert demografische und emotionsbezogene Daten sowie Daten zur Erkennung einmaliger Besucher in das private Netzwerk von Contoso. |
 | | Blob Storage | Die vom AI Dev Kit erfassten Bilder werden in Blob Storage von Azure Stack Hub hochgeladen. |
