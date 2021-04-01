@@ -10,12 +10,13 @@ metadata:
   author: BryanLa
   ms.author: bryanla
   ms.date: 03/09/2021
-  ms.openlocfilehash: 23834253d05753219efbd5b5e15a216741388e8a
-  ms.sourcegitcommit: d218ae31c564b862f2d79bb560075f5983f1771c
+  ms.custom: e2e-hybrid
+  ms.openlocfilehash: 63dedc60e43b3dac708772821bd6f2a0b00c38fb
+  ms.sourcegitcommit: 6404be204d56d42f96ab525baf6108f4b710da77
   ms.translationtype: HT
   ms.contentlocale: de-DE
-  ms.lasthandoff: 03/24/2021
-  ms.locfileid: "105048917"
+  ms.lasthandoff: 03/29/2021
+  ms.locfileid: "105735591"
 highlightedContent:
   items:
   - title: 'Ignite 2021: Sitzungen zum Thema „Hybrid“'
