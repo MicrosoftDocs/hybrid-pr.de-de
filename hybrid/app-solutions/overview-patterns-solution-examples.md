@@ -3,18 +3,18 @@ title: Beispiele für Hybridmuster und -lösungen für Azure und Azure Stack Hub
 description: Hier finden Sie eine Übersicht über Beispiele für Hybridmuster und -lösungen, mit denen Sie sich mit Hybridlösungen in Azure und Azure Stack Hub vertraut machen und solche Art von Lösungen erstellen können.
 author: BryanLa
 ms.topic: overview
-ms.date: 11/05/2019
+ms.date: 05/24/2021
 ms.author: bryanla
 ms.reviewer: anajod
-ms.lastreviewed: 11/05/2019
-ms.openlocfilehash: 4f86e5ae4b8b9bd7693617b07419b67dfcf05dc1
-ms.sourcegitcommit: 962334135b63ac99c715e7bc8fb9282648ba63c9
+ms.lastreviewed: 05/24/2021
+ms.openlocfilehash: 9f3f13c23bec31c5132c7e90294356b9463fd72b
+ms.sourcegitcommit: cf2c4033d1b169f5b63980ce1865281366905e2e
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "104895311"
+ms.lasthandoff: 05/25/2021
+ms.locfileid: "110343857"
 ---
-# <a name="hybrid-patterns-and-solution-examples-for-azure-and-azure-stack"></a>Beispiele für Hybridmuster und -lösungen für Azure und Azure Stack
+# <a name="hybrid-solution-patterns-and-examples-for-azure-and-azure-stack"></a>Hybridlösungsmuster und -beispiele für Azure und Azure Stack
 
 Microsoft stellt Azure- und Azure Stack-Produkte und -Lösungen als konsistentes Azure-Ökosystem bereit. Die Microsoft Azure Stack-Familie ist eine Erweiterung von Azure.
 
@@ -29,11 +29,11 @@ Mit Azure Stack können Sie die Agilität des Cloud Computing für Ihre lokale U
 
 Apps, die mehrere Clouds nutzen, werden auch als *Hybrid-Apps* bezeichnet. Sie können Hybrid Cloud-Apps in Azure erstellen und sie anschließend in Ihrem verbundenen oder nicht verbundenen Rechenzentrum bereitstellen, egal wo sich dieses befindet.
 
-Szenarien mit Hybrid-Apps unterscheiden sich stark je nach den für die Bereitstellung verfügbaren Ressourcen. Darüber hinaus bringen sie Überlegungen zu Geografie, Sicherheit, Internetzugriff usw. mit sich. Obwohl die hier beschriebenen Muster und Lösungen möglicherweise nicht alle Anforderungen abdecken, bieten sie Richtlinien und Beispiele, die für die Implementierung von Hybridlösungen näher untersucht und wiederverwendet werden können.
+Szenarien mit Hybrid-Apps unterscheiden sich stark je nach den für die Bereitstellung verfügbaren Ressourcen. Darüber hinaus bringen sie Überlegungen zu Geografie, Sicherheit, Internetzugriff usw. mit sich. Obwohl die hier beschriebenen Lösungsmuster und -beispiele möglicherweise nicht alle Anforderungen abdecken, bieten sie Richtlinien und Beispiele, die für die Implementierung von Hybridlösungen näher untersucht und wiederverwendet werden können.
 
-## <a name="design-patterns"></a>Entwurfsmuster
+## <a name="solution-patterns"></a>Lösungsmuster
 
-Entwurfsmuster filtern generalisierte wiederholbare Entwurfsrichtlinien aus realen Kundenszenarien und -umgebungen heraus. Ein Muster ist abstrakt, sodass es auf verschiedene Arten von Szenarien oder vertikalen Branchen angewendet werden kann. Jedes Muster dokumentiert den Kontext und das Problem und bietet einen Überblick über ein Lösungsbeispiel. Das Lösungsbeispiel ist als mögliche Implementierung des Musters gedacht.
+Lösungsmuster filtern generalisierte wiederholbare Entwurfsrichtlinien aus realen Kundenszenarien und -umgebungen heraus. Ein Muster ist abstrakt, sodass es auf verschiedene Arten von Szenarien oder vertikalen Branchen angewendet werden kann. Jedes Muster dokumentiert den Kontext und das Problem und bietet einen Überblick über ein Lösungsbeispiel. Das Lösungsbeispiel ist als mögliche Implementierung des Musters gedacht.
 
 Es gibt zwei Arten von Musterartikeln:
 

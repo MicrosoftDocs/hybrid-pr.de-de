@@ -9,10 +9,16 @@ metadata:
   ms.topic: hub-page
   author: BryanLa
   ms.author: bryanla
-  ms.date: 03/09/2021
+  ms.date: 06/11/2021
   ms.custom: e2e-hybrid
 highlightedContent:
   items:
+    - title: 'Build 2021: Sitzungen zum Thema „Hybrid“'
+      itemType: video
+      url: 'https://mybuild.microsoft.com/sessions?t={"from":"2021-05-25T00:00:00-07:00","to":"2021-05-27T23:59:00-07:00"}&q=hybrid'
+    - title: 'Build 2021: Sitzungen zum Thema „Arc“'
+      itemType: video
+      url: 'https://mybuild.microsoft.com/sessions?t={"from":"2021-05-25T00:00:00-07:00","to":"2021-05-27T23:59:00-07:00"}&q=" Arc "'
     - title: 'Ignite 2021: Sitzungen zum Thema „Hybrid“'
       itemType: video
       url: 'https://myignite.microsoft.com/sessions?t={"from":"2021-03-02T00:00:00-07:00","to":"2021-03-04T23:59:00-07:00"}&q=hybrid'
@@ -31,12 +37,6 @@ highlightedContent:
     - title: Einführung in Azure Modular Data Center
       itemType: video
       url: 'https://azure.microsoft.com/resources/videos/azure-modular-datacenter/'
-    - title: 'Inspire 2020: Neuerungen in Azure Stack HCI'
-      itemType: video
-      url: 'https://myinspire.microsoft.com/sessions/4a50e354-b3a8-4d54-9d2a-9dc723ac1030'
-    - title: 'Build 2020: Sitzungen zum Thema „Hybrid“'
-      itemType: video
-      url: 'https://mybuild.microsoft.com/sessions?q=hybrid%2520%2522%2520Arc%2520%2522%2520%2522%2520intelligent%2520edge%2520%2522%2520%2522%2520sql%2520edge%2520%2522&g=%255B%2522on-demand%2522%255D'
 productDirectory:
   title: Hybrid- und Multicloudplattform von Azure
   summary: Hier finden Sie Informationen zu Plattformen zum Entwickeln und Betreiben von Hybrid- und Multicloudlösungen.
@@ -317,6 +317,22 @@ additionalContent:
               text: Einführung in Azure Stack-Hybrid-Apps
             - url: 'https://www.youtube.com/watch?v=2lw8zOpJTn0'
               text: Dynamisches Skalieren von Azure Stack Hub auf Azure
+            - url: 'https://myinspire.microsoft.com/sessions/4a50e354-b3a8-4d54-9d2a-9dc723ac1030'
+              text: Neuerungen in Azure Stack HCI
+        - title: Entwicklung und Integration
+          links:
+            - url: 'https://www.youtube.com/watch?v=to8D7Xl9SU8'
+              text: Einführung in Azure Stack-Hybrid-Apps
+            - url: 'https://mybuild.microsoft.com/sessions/2debfc2e-f0b3-4adf-bcec-d126930f806f'
+              text: Erstellen überall ausführbarer cloudnativer Anwendungen
+            - url: 'https://mybuild.microsoft.com/sessions/9f56bc10-30bd-42e2-afc8-b61b22260c49'
+              text: Erstellen konsistenter Hybrid- und Multicloudanwendungen mit Azure Arc (Ask the Experts)
+            - url: 'https://www.youtube.com/watch?v=2lw8zOpJTn0'
+              text: Dynamisches Skalieren von Azure Stack Hub auf Azure
+            - url: 'https://mybuild.microsoft.com/sessions/92bd3e12-fbf4-4278-b68f-fe776b02adfa'
+              text: 'Logic Apps: Unterstützen der Zukunft der Integration'
+            - url: 'https://mybuild.microsoft.com/sessions/76ebac39-517d-44da-a58e-df4193b5efa9'
+              text: Die Zukunft der modernen Anwendungsentwicklung mit .NET
         - title: Microsoft Edge
           links:
             - url: 'https://github.com/Azure-Samples/AI-Video-Intelligence-Solution-Accelerator'

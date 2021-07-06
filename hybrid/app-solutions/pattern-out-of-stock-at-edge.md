@@ -3,16 +3,16 @@ title: Fehlbestandserkennung mit Azure und Azure Stack Edge
 description: Hier erfahren Sie, wie Sie Azure- und Azure Stack Edge-Dienste verwenden, um eine Fehlbestandserkennung zu implementieren.
 author: BryanLa
 ms.topic: article
-ms.date: 11/05/2019
+ms.date: 05/24/2021
 ms.author: bryanla
 ms.reviewer: anajod
-ms.lastreviewed: 11/05/2019
-ms.openlocfilehash: 865f63bc4234e50ed169aa29cefdb1886750594c
-ms.sourcegitcommit: bb3e40b210f86173568a47ba18c3cc50d4a40607
-ms.translationtype: MT
+ms.lastreviewed: 05/24/2021
+ms.openlocfilehash: b25a6391c4e64fa7018031bac4fb7d098c56b529
+ms.sourcegitcommit: cf2c4033d1b169f5b63980ce1865281366905e2e
+ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/17/2020
-ms.locfileid: "84910453"
+ms.lasthandoff: 05/25/2021
+ms.locfileid: "110343874"
 ---
 # <a name="out-of-stock-detection-at-the-edge-pattern"></a>Muster zur Fehlbestandserkennung im Edge-Bereich
 
@@ -81,4 +81,4 @@ Weitere Informationen zu den in diesem Artikel behandelten Themen:
 - Unter [Überlegungen zum Entwurf von Hybrid-Apps](overview-app-design-considerations.md) erfahren Sie mehr zu bewährten Methoden und erhalten Antworten auf weitere Fragen.
 - Im Artikel zur [Azure Stack-Familie mit Produkten und Lösungen](/azure-stack) erfahren Sie mehr über das gesamte Portfolio von Produkten und Lösungen.
 
-Wenn Sie bereit sind, das Lösungsbeispiel zu testen, fahren Sie mit dem [Bereitstellungsleitfaden für eine Analyselösung für mehrstufige Daten](https://aka.ms/edgeinferencingdeploy) fort. In diesem Bereitstellungsleitfaden finden Sie detaillierte Anweisungen zum Bereitstellen und Testen der zugehörigen Komponenten.
+Wenn Sie bereit sind, das Lösungsbeispiel zu testen, fahren Sie mit dem [Bereitstellungsleitfaden für die Edge-ML-Rückschlusslösung](https://aka.ms/edgeinferencingdeploy) fort. In diesem Bereitstellungsleitfaden finden Sie detaillierte Anweisungen zum Bereitstellen und Testen der zugehörigen Komponenten.
